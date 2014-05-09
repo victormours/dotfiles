@@ -9,10 +9,10 @@ function explicit_alias {
   alias $alias="display_command $command; $command"
 }
 
-explicit_alias "alice" "echo hello alice"
-explicit_alias "bob" "echo hello bob"
+# Moving to projects
 explicit_alias 'dotfiles' 'cd ~/dev/dotfiles'
 explicit_alias 'twitterlily' 'cd ~/code/twitterlily; mvim'
+explicit_alias 'cdtwitterlily' 'cd ~/code/twitterlily'
 explicit_alias 'api' 'cd ~/code/api; mvim'
 explicit_alias 'dashboard' 'cd ~/code/dashboard; mvim'
 explicit_alias 'chefrep' 'cd ~/code/chef-repo; mvim'
@@ -21,8 +21,6 @@ explicit_alias 'wallmanager' 'cd ~/code/wallmanager; mvim'
 explicit_alias 'front' 'cd ~/code/monitoring; mvim'
 explicit_alias 'back' 'cd ~/code/monitoring-api; mvim'
 
-Moving to projects
-explicit_alias 'cdtwitterlily' 'cd ~/code/twitterlily'
 
 explicit_alias 'backpr' 'open https://github.com/tigerlily/monitoring-api/pulls'
 
