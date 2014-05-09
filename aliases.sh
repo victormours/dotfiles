@@ -23,6 +23,8 @@ explicit_alias 'back' 'cd ~/code/monitoring-api; mvim'
 
 explicit_alias 'backpr' 'open https://github.com/tigerlily/monitoring-api/pulls'
 
+explicit_alias 'code' 'cd ~/code'
+
 # SSH
 explicit_alias 'sshwallmanagerprod' 'ssh deploy@factory1.tigerlilyplatform.com'
 explicit_alias 'sshtwitterlilyprod' 'ssh deploy@twitterlily.tigerlilyplatform.com'
@@ -30,12 +32,10 @@ explicit_alias 'sshsiprod' 'ssh deploy@socialinbox.tigerlilyplatform.com'
 
 # Custom utils
 explicit_alias bd 'bundle'
-explicit_alias 'code' 'cd ~/code'
-explicit_alias prs 'touch tmp/restart.txt; echo "Pow restarted"'
 explicit_alias be 'bundle exec'
 explicit_alias ber 'bundle exec rspec'
+explicit_alias prs 'touch tmp/restart.txt; echo "Pow restarted"'
 explicit_alias rs 'rspec'
-explicit_alias gls 'gl | head'
 explicit_alias gruntt 'grunt test'
 
 # Vital git aliases
@@ -64,6 +64,7 @@ explicit_alias guns 'git unstage'
 explicit_alias gunc 'git uncommit'
 
 explicit_alias gl 'git l'
+explicit_alias gls 'gl | head'
 
 explicit_alias gri 'git rebase -i'
 explicit_alias grim 'git rebase -i master'
