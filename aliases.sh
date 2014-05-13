@@ -26,9 +26,10 @@ explicit_alias 'backpr' 'open https://github.com/tigerlily/monitoring-api/pulls'
 explicit_alias 'code' 'cd ~/code'
 
 # SSH
-explicit_alias 'sshwallmanagerprod' 'ssh deploy@factory1.tigerlilyplatform.com'
+explicit_alias 'sshwallmanager' 'ssh deploy@factory1.tigerlilyplatform.com'
 explicit_alias 'sshtwitterlilyprod' 'ssh deploy@twitterlily.tigerlilyplatform.com'
 explicit_alias 'sshsiprod' 'ssh deploy@socialinbox.tigerlilyplatform.com'
+
 
 # Custom utils
 explicit_alias bd 'bundle'
