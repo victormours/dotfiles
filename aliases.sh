@@ -6,7 +6,7 @@ function display_command {
 function explicit_alias {
   alias=$1
   command=$2
-  alias $alias="display_command $command; $command"
+  alias $alias="display_command '$command'; $command"
 }
 
 # Moving to projects
