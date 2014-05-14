@@ -9,7 +9,10 @@ function explicit_alias {
   alias $alias="display_command '$command'; $command"
 }
 
-# Moving to projects
+explicit_alias 'ae' 'mvim ~/dev/dotfiles/aliases.sh' # edit aliases
+explicit_alias 'ar' 'source ~/dev/dotfiles/aliases.sh' # reload aliases
+
+# Working on projects
 explicit_alias 'dotfiles' 'cd ~/dev/dotfiles; mvim'
 explicit_alias 'twitterlily' 'cd ~/code/twitterlily; mvim'
 explicit_alias 'cdtwitterlily' 'cd ~/code/twitterlily'
@@ -21,17 +24,20 @@ explicit_alias 'wallmanager' 'cd ~/code/wallmanager; mvim'
 explicit_alias 'front' 'cd ~/code/monitoring; mvim'
 explicit_alias 'back' 'cd ~/code/monitoring-api; mvim'
 
-explicit_alias 'backpr' 'open https://github.com/tigerlily/monitoring-api/pulls'
-
+# Moving to projects
 explicit_alias 'code' 'cd ~/code'
+explicit_alias 'cdfront' 'cd ~/code/monitoring'
+explicit_alias 'cdback' 'cd ~/code/monitoring-api'
+
+explicit_alias 'backpr' 'open https://github.com/tigerlily/monitoring-api/pulls'
 
 # SSH
 explicit_alias 'sshwallmanager' 'ssh deploy@factory1.tigerlilyplatform.com'
 explicit_alias 'sshtwitterlilyprod' 'ssh deploy@twitterlily.tigerlilyplatform.com'
 explicit_alias 'sshsiprod' 'ssh deploy@socialinbox.tigerlilyplatform.com'
 
-
 # Custom utils
+explicit_alias l 'less -r'
 explicit_alias bd 'bundle'
 explicit_alias be 'bundle exec'
 explicit_alias ber 'bundle exec rspec'
