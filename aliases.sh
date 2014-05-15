@@ -28,8 +28,10 @@ explicit_alias 'back' 'cd ~/code/monitoring-api; mvim'
 explicit_alias 'code' 'cd ~/code'
 explicit_alias 'cdfront' 'cd ~/code/monitoring'
 explicit_alias 'cdback' 'cd ~/code/monitoring-api'
+explicit_alias 'cddotfiles' 'cd ~/dev/dotfiles'
 
 explicit_alias 'backpr' 'open https://github.com/tigerlily/monitoring-api/pulls'
+explicit_alias 'frontpr' 'open https://github.com/tigerlily/monitoring/pulls'
 
 # SSH
 explicit_alias 'sshwallmanager' 'ssh deploy@factory1.tigerlilyplatform.com'
@@ -47,9 +49,9 @@ explicit_alias gruntt 'grunt test'
 
 # Vital git aliases
 explicit_alias gd 'git diff'
-explicit_alias gb 'git b'
-explicit_alias gnb 'git nb' # new branch aka checkout -b
-explicit_alias gco 'git co'
+explicit_alias gb 'git branch -v'
+explicit_alias gnb 'git checkout -b' # new branch
+explicit_alias gco 'git checkout'
 
 explicit_alias gplr 'git pull --rebase'
 
@@ -58,7 +60,8 @@ explicit_alias gsh 'git show'
 
 explicit_alias gac 'git add -A .; git commit -m'
 explicit_alias ga 'git add -A'
-explicit_alias gcm 'git ci -m'
+explicit_alias gap 'git add --patch'
+explicit_alias gcm 'git commit -m'
 
 explicit_alias gps 'git push'
 
@@ -66,26 +69,25 @@ explicit_alias gst 'git stash'
 explicit_alias gsp 'git stash pop'
 explicit_alias gsa 'git stash apply'
 
-explicit_alias gu 'git uncommit; git unstage' # 'Git undo'
-explicit_alias guns 'git unstage'
-explicit_alias gunc 'git uncommit'
+explicit_alias guns 'git reset HEAD # git unstage'
+explicit_alias gunc 'git reset --soft HEAD^ # git uncommit'
 
-explicit_alias gl 'git l'
-explicit_alias gls 'gl | head'
+explicit_alias gl 'git log --graph --date=short'
+explicit_alias gls 'git log --graph --date=short | head'
 
 explicit_alias gri 'git rebase -i'
 explicit_alias grim 'git rebase -i master'
 explicit_alias grid 'git rebase -i development'
 
 # To set the origin branch, kinda hacky
-explicit_alias 'gfirstpush' 'eval `gpsh 2>&1 | tail -n2 | head -n1`'
+explicit_alias 'gfirstpush' 'eval `gps 2>&1 | tail -n2 | head -n1`'
 
 # Other git aliases
 explicit_alias gi 'vim .gitignore'
 explicit_alias gcp 'git cp'
 explicit_alias gm 'git merge'
 explicit_alias gms 'git merge --squash'
-explicit_alias gam 'git amend --reset-author'
+explicit_alias gam 'git commit --amend --reset-author'
 explicit_alias grv 'git remote -v'
 explicit_alias grr 'git remote rm'
 explicit_alias grad 'git remote add'
@@ -93,7 +95,6 @@ explicit_alias gr 'git rebase'
 explicit_alias gra 'git rebase --abort'
 explicit_alias ggrc 'git rebase --continue'
 explicit_alias gbi 'git rebase --interactive'
-explicit_alias co 'git co'
 explicit_alias gf 'git fetch'
 explicit_alias gbd 'git b -D -w'
 explicit_alias gdc 'git diff --cached -w'
