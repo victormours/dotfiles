@@ -1,5 +1,6 @@
-# Faster mouse key
-defaults write com.apple.universalaccess "mouseDriverInitialDelay" 0.05
+# Faster key repetition
+defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write NSGlobalDomain InitialKeyRepeat -int 3
 
 # Key remaps
-~/Applications/PCKeyboardHack.app/Contents/Library/bin/PCKeyboardHack_cliset keycode_capslock 53
+# ~/Applications/PCKeyboardHack.app/Contents/Library/bin/PCKeyboardHack_cliset keycode_capslock 53
