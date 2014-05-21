@@ -37,8 +37,10 @@ explicit_alias 'frontpr' 'open https://github.com/tigerlily/monitoring/pulls'
 explicit_alias 'sshwallmanager' 'ssh deploy@factory1.tigerlilyplatform.com'
 explicit_alias 'sshtwitterlilyprod' 'ssh deploy@twitterlily.tigerlilyplatform.com'
 explicit_alias 'sshsiprod' 'ssh deploy@socialinbox.tigerlilyplatform.com'
+explicit_alias 'sshsistg' 'ssh deploy@socialinbox.staging.tigerlilyplatform.com'
 
 # Custom utils
+explicit_alias c 'cd'
 explicit_alias l 'less -r'
 explicit_alias bd 'bundle'
 explicit_alias be 'bundle exec'
@@ -47,11 +49,13 @@ explicit_alias prs 'touch tmp/restart.txt; echo "Pow restarted"'
 explicit_alias rs 'rspec'
 explicit_alias gruntt 'grunt test'
 
-# Vital git aliases
+# Git essentials
 explicit_alias gd 'git diff'
 explicit_alias gb 'git branch -v'
 explicit_alias gnb 'git checkout -b' # new branch
 explicit_alias gco 'git checkout'
+explicit_alias gcom 'git checkout master'
+explicit_alias gcod 'git checkout development'
 
 explicit_alias gplr 'git pull --rebase'
 
