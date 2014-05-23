@@ -9,35 +9,9 @@ function explicit_alias {
   alias $alias="display_command '$command'; $command"
 }
 
-explicit_alias 'ae' 'mvim ~/dev/dotfiles/aliases.sh' # edit aliases
-explicit_alias 'ar' 'source ~/dev/dotfiles/aliases.sh' # reload aliases
-
-# Working on projects
-explicit_alias 'dotfiles' 'cd ~/dev/dotfiles; mvim'
-explicit_alias 'twitterlily' 'cd ~/code/twitterlily; mvim'
-explicit_alias 'cdtwitterlily' 'cd ~/code/twitterlily'
-explicit_alias 'api' 'cd ~/code/api; mvim'
-explicit_alias 'dashboard' 'cd ~/code/dashboard; mvim'
-explicit_alias 'chefrep' 'cd ~/code/chef-repo; mvim'
-explicit_alias 'fanvoice' 'cd ~/code/fanvoice; mvim'
-explicit_alias 'wallmanager' 'cd ~/code/wallmanager; mvim'
-explicit_alias 'front' 'cd ~/code/monitoring; mvim'
-explicit_alias 'back' 'cd ~/code/monitoring-api; mvim'
-
-# Moving to projects
-explicit_alias 'code' 'cd ~/code'
-explicit_alias 'cdfront' 'cd ~/code/monitoring'
-explicit_alias 'cdback' 'cd ~/code/monitoring-api'
-explicit_alias 'cddotfiles' 'cd ~/dev/dotfiles'
-
-explicit_alias 'backpr' 'open https://github.com/tigerlily/monitoring-api/pulls'
-explicit_alias 'frontpr' 'open https://github.com/tigerlily/monitoring/pulls'
-
-# SSH
-explicit_alias 'sshwallmanager' 'ssh deploy@factory1.tigerlilyplatform.com'
-explicit_alias 'sshtwitterlilyprod' 'ssh deploy@twitterlily.tigerlilyplatform.com'
-explicit_alias 'sshsiprod' 'ssh deploy@socialinbox.tigerlilyplatform.com'
-explicit_alias 'sshsistg' 'ssh deploy@socialinbox.staging.tigerlilyplatform.com'
+# Edit and reload aliases
+explicit_alias 'ae' 'mvim ~/dev/dotfiles/aliases.sh'
+explicit_alias 'ar' 'source ~/dev/dotfiles/aliases.sh'
 
 # Custom utils
 explicit_alias c 'cd'
@@ -83,9 +57,6 @@ explicit_alias gri 'git rebase -i'
 explicit_alias grim 'git rebase -i master'
 explicit_alias grid 'git rebase -i development'
 
-# To set the origin branch, kinda hacky
-explicit_alias 'gfirstpush' 'eval `gps 2>&1 | tail -n2 | head -n1`'
-
 # Other git aliases
 explicit_alias gi 'vim .gitignore'
 explicit_alias gcp 'git cp'
@@ -110,4 +81,36 @@ explicit_alias grsh 'git reset --hard'
 explicit_alias gcln 'git clean'
 explicit_alias 'gclndf' 'git clean -df'
 explicit_alias 'gclndfx' 'git clean -dfx'
+
+# Working on projects
+explicit_alias 'dotfiles' 'cd ~/dev/dotfiles; mvim'
+explicit_alias 'twitterlily' 'cd ~/code/twitterlily; mvim'
+explicit_alias 'cdtwitterlily' 'cd ~/code/twitterlily'
+explicit_alias 'api' 'cd ~/code/api; mvim'
+explicit_alias 'dashboard' 'cd ~/code/dashboard; mvim'
+explicit_alias 'chefrep' 'cd ~/code/chef-repo; mvim'
+explicit_alias 'fanvoice' 'cd ~/code/fanvoice; mvim'
+explicit_alias 'wallmanager' 'cd ~/code/wallmanager; mvim'
+explicit_alias 'front' 'cd ~/code/monitoring; mvim'
+explicit_alias 'back' 'cd ~/code/monitoring-api; mvim'
+explicit_alias 'bootstrap' 'cd ~/code/tigerlily-bootstrap; mvim'
+explicit_alias 'blog' 'cd ~/code/tigerlily.github.io; mvim'
+
+# Moving to projects
+explicit_alias 'code' 'cd ~/code'
+explicit_alias 'cdfront' 'cd ~/code/monitoring'
+explicit_alias 'cdback' 'cd ~/code/monitoring-api'
+explicit_alias 'cddotfiles' 'cd ~/dev/dotfiles'
+
+explicit_alias 'bpr' 'open https://github.com/tigerlily/monitoring-api/pulls'
+explicit_alias 'fpr' 'open https://github.com/tigerlily/monitoring/pulls'
+explicit_alias 'twitterpr' 'open https://github.com/tigerlily/twitterlily/pulls'
+explicit_alias 'bootstrappr' 'open https://github.com/tigerlily/tigerlily-bootstrap/pulls'
+
+# SSH
+explicit_alias 'sshwallmanager' 'ssh deploy@factory1.tigerlilyplatform.com'
+explicit_alias 'sshtwitterlilyprod' 'ssh deploy@twitterlily.tigerlilyplatform.com'
+explicit_alias 'sshsiprod' 'ssh deploy@socialinbox.tigerlilyplatform.com'
+explicit_alias 'sshsistg' 'ssh deploy@socialinbox.staging.tigerlilyplatform.com'
+
 
