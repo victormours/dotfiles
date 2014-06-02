@@ -3,15 +3,12 @@ Remaps for left-handed Kinesis Advantage
 
 Key -> Function
 
-Delete -> Cmd
-BackSpace -> Space
 PageUp -> Alt
-PageDown -> Delete
-Space -> Cmd
+PageDown -> Cmd
+Delete -> Cmd
 
 Up Arrow -> Down Arrow
 Down Arrow -> Up Arrow
-
 
 
 Macros
