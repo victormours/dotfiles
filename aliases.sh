@@ -58,6 +58,8 @@ explicit_alias gri 'git rebase -i'
 explicit_alias grim 'git rebase -i master'
 explicit_alias grid 'git rebase -i development'
 
+explicit_alias gdd 'git diff development'
+
 # Other git aliases
 explicit_alias gdd 'git diff development'
 explicit_alias gdm 'git diff master'
