@@ -7,6 +7,7 @@ Delete -> Cmd
 BackSpace -> Space
 PageUp -> Alt
 PageDown -> Delete
+Space -> Cmd
 
 Up Arrow -> Down Arrow
 Down Arrow -> Up Arrow
