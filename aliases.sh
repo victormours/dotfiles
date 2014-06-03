@@ -25,5 +25,6 @@ explicit_alias be 'bundle exec'
 explicit_alias ber 'bundle exec rspec'
 explicit_alias prs 'touch tmp/restart.txt; echo "Pow restarted"'
 explicit_alias rs 'rspec'
+explicit_alias rp 'bundle exec rspec-preloader'
 explicit_alias gruntt 'grunt test'
 
