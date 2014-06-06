@@ -8,7 +8,7 @@ function explicit_alias {
   command=$2
   eval "function $alias {
     display_command '$command' \$*
-    $command
+    $command \$*
   }"
 }
 
