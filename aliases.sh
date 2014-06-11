@@ -32,3 +32,4 @@ explicit_alias rp 'bundle exec rspec-preloader'
 explicit_alias gruntt 'grunt test'
 explicit_alias psg 'ps aux | grep'
 
+explicit_alias 'gstp' 'git stash pop'
