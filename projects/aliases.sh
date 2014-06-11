@@ -12,6 +12,7 @@ explicit_alias 'back' 'cd ~/code/monitoring-api; mvim'
 explicit_alias 'bootstrap' 'cd ~/code/tigerlily-bootstrap; mvim'
 explicit_alias 'blog' 'cd ~/code/tigerlily.github.io; mvim'
 explicit_alias 'perf' 'cd ~/dev/perf; mvim'
+explicit_alias 'feeder' 'cd ~/code/feeder; mvim'
 
 # Moving to projects
 explicit_alias 'code' 'cd ~/code'
@@ -19,6 +20,8 @@ explicit_alias 'cdfront' 'cd ~/code/monitoring'
 explicit_alias 'cdback' 'cd ~/code/monitoring-api'
 explicit_alias 'cddotfiles' 'cd ~/dev/dotfiles'
 explicit_alias 'cdblog' 'cd ~/code/tigerlily.github.io'
+explicit_alias 'cdfeeder' 'cd ~/code/feeder'
+
 
 explicit_alias 'brep' 'open https://github.com/tigerlily/monitoring-api'
 explicit_alias 'frep' 'open https://github.com/tigerlily/monitoring'
