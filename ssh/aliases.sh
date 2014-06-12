@@ -5,3 +5,5 @@ explicit_alias 'sshtwitterlilystg' 'ssh deploy@twitterlily.staging.tigerlilyplat
 explicit_alias 'sshsiprod' 'ssh deploy@socialinbox.tigerlilyplatform.com'
 explicit_alias 'sshsistg' 'ssh deploy@socialinbox.staging.tigerlilyplatform.com'
 explicit_alias 'sshfanvoice' 'ssh deploy@sfanvoice.tigerlilyplatform.com'
+explicit_alias 'sshfeeder' 'ssh deploy@sfanvoice.tigerlilyplatform.com'
+

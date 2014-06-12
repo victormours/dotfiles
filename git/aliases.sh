@@ -1,4 +1,5 @@
 # Git essentials
+explicit_alias g git
 explicit_alias gd 'git diff'
 explicit_alias gb 'git branch -v'
 explicit_alias gnb 'git checkout -b' # new branch
