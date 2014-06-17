@@ -13,6 +13,7 @@ explicit_alias 'bootstrap' 'cd ~/code/tigerlily-bootstrap; mvim'
 explicit_alias 'blog' 'cd ~/code/tigerlily.github.io; mvim'
 explicit_alias 'perf' 'cd ~/dev/perf; mvim'
 explicit_alias 'feeder' 'cd ~/code/feeder; mvim'
+explicit_alias 'insights' 'cd ~/code/insights; mvim'
 
 # Moving to projects
 explicit_alias 'code' 'cd ~/code'
