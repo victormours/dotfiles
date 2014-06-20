@@ -37,6 +37,7 @@ explicit_alias grid 'git rebase -i development'
 explicit_alias gdd 'git diff development'
 
 # Other git aliases
+explicit_alias gcb 'git rev-parse --abbrev-ref HEAD' #current branch
 explicit_alias gdd 'git diff development'
 explicit_alias gdm 'git diff master'
 explicit_alias gi 'vim .gitignore'
