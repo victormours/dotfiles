@@ -30,6 +30,7 @@ syntax on
 " the plugins.
 let mapleader=","
 nmap <Leader>rxm :ExtractMethod<Enter>
+nmap <Leader>f :NERDTreeToggle<Enter>
 
 " ================ Turn Off Swap Files ==============
 
@@ -65,4 +66,21 @@ set list listchars=tab:\ \ ,trail:·
 set nowrap       "Don't wrap lines
 set linebreak    "Wrap lines at convenient points
 
+" Install Vundle
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'altercation/vim-colors-solarized'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+syntax enable
+
+" Solarized theme
+let g:solarized_termtrans = 1
+set background=dark
+colorscheme solarized
