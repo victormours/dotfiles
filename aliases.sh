@@ -6,10 +6,7 @@ function display_command {
 function explicit_alias {
   alias=$1
   command=$2
-  eval "function $alias {
-    display_command '$command' \$*
-    $command \$*
-  }"
+  alias $alias="display_command '$command'; $command"
 }
 
 source ~/dev/dotfiles/git/aliases.sh
