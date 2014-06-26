@@ -13,6 +13,7 @@ explicit_alias 'blog' 'cd ~/code/tigerlily.github.io; mvim'
 explicit_alias 'perf' 'cd ~/dev/perf; mvim'
 explicit_alias 'feeder' 'cd ~/code/feeder; mvim'
 explicit_alias 'insights' 'cd ~/code/insights; mvim'
+explicit_alias 'wiki' 'cd ~/code/wiki; mvim'
 
 # Moving to projects
 explicit_alias 'code' 'cd ~/code'
@@ -33,3 +34,4 @@ explicit_alias 'twitterpr' 'open https://github.com/tigerlily/twitterlily/pulls'
 explicit_alias 'bootstrappr' 'open https://github.com/tigerlily/tigerlily-bootstrap/pulls'
 
 explicit_alias sleek 'open https://socialinbox.tigerlilyplatform.com'
+
