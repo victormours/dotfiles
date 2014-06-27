@@ -24,6 +24,7 @@ explicit_alias 'cdblog' 'cd ~/code/tigerlily.github.io'
 explicit_alias 'cdfeeder' 'cd ~/code/feeder'
 explicit_alias 'cdtwitterlily' 'cd ~/code/twitterlily'
 explicit_alias 'cdwall' 'cd ~/code/wallmanager'
+explicit_alias 'cdbootstrap' 'cd ~/code/tigerlily-bootstrap'
 
 explicit_alias 'brep' 'open https://github.com/tigerlily/monitoring-api'
 explicit_alias 'frep' 'open https://github.com/tigerlily/monitoring'
