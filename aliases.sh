@@ -30,3 +30,8 @@ explicit_alias gruntt 'grunt test'
 explicit_alias psg 'ps aux | grep'
 explicit_alias m mvim
 
+# grunt
+explicit_alias gnt 'grunt ngtemplates'
+explicit_alias grbu 'grunt build'
+explicit_alias grs 'grunt set'
+
