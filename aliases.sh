@@ -14,7 +14,7 @@ source ~/dev/dotfiles/projects/aliases.sh
 source ~/dev/dotfiles/ssh/aliases.sh
 
 # Edit and reload aliases
-explicit_alias 'ae' 'mvim ~/dev/dotfiles/aliases.sh'
+explicit_alias 'ae' 'vim ~/dev/dotfiles/aliases.sh'
 explicit_alias 'ar' 'source ~/dev/dotfiles/aliases.sh'
 
 # Custom utils
@@ -31,7 +31,7 @@ explicit_alias psg 'ps aux | grep'
 explicit_alias m mvim
 
 # grunt
-explicit_alias gnt 'grunt ngtemplates'
+explicit_alias grngt 'grunt ngtemplates'
 explicit_alias grbu 'grunt build'
 explicit_alias grs 'grunt set'
 
