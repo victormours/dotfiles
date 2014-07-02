@@ -7,4 +7,5 @@ explicit_alias 'sshskstg' 'ssh deploy@socialinbox.staging.tigerlilyplatform.com'
 explicit_alias 'sshfanvoice' 'ssh deploy@sfanvoice.tigerlilyplatform.com'
 explicit_alias 'sshfeeder' 'ssh deploy@sfanvoice.tigerlilyplatform.com'
 explicit_alias 'sshapi' 'ssh deploy@api1.tigerlilyplatform.com'
+explicit_alias 'sshinsights' 'ssh deploy@insights.tigerlilyplatform.com'
 
