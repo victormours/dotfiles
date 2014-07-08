@@ -27,7 +27,7 @@ explicit_alias gsp 'git stash pop'
 explicit_alias gsa 'git stash apply'
 
 explicit_alias guns 'git reset HEAD'
-explicit_alias gunc 'git reset --soft HEAD^'
+explicit_alias gunc 'git reset --soft HEAD\^'
 
 explicit_alias gl 'git log --graph --date=short'
 explicit_alias gls 'git log --graph --date=short | head'
