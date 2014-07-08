@@ -35,3 +35,7 @@ explicit_alias grngt 'grunt ngtemplates'
 explicit_alias grbu 'grunt build'
 explicit_alias grs 'grunt set'
 
+# deploying
+explicit_alias csd 'bundle exec cap staging deploy'
+
+explicit_alias mail 'open https://mail.google.com'
