@@ -72,6 +72,8 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
+
+" Cool plugins
 Bundle 'scrooloose/nerdtree'
 Bundle 'altercation/vim-colors-solarized'
 
@@ -90,3 +92,8 @@ map <C-J> <C-W>j<C-W>_
 map <C-K> <C-W>k<C-W>_
 map <C-H> <C-W>h<C-W>_
 map <C-L> <C-W>l<C-W>_
+
+" Make nerdtree look nice
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+let g:NERDTreeWinSize = 30
