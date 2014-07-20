@@ -87,6 +87,23 @@ let g:solarized_termtrans = 1
 set background=dark
 colorscheme solarized
 
+if has("gui_running")
+"tell the term has 256 colors
+  set t_Co=256
+
+" Show tab number (useful for Cmd-1, Cmd-2.. mapping)
+" For some reason this doesn't work as a regular set command,
+" (the numbers don't show up) so I made it a VimEnter event
+  autocmd VimEnter * set guitablabel=%N:\ %t\ %M
+
+  " Set the font to Inconsolata
+  if has("gui_gtk2")
+    set guifont=Inconsolata\ XL\ 12,Inconsolata\ 15,Monaco\ 12
+  else
+    set guifont=Inconsolata\ XL:h17,Inconsolata:h20,Monaco:h17
+  end
+end
+
 " Quick jumping between splits
 map <C-J> <C-W>j<C-W>_
 map <C-K> <C-W>k<C-W>_
