@@ -3,3 +3,7 @@ source $HOME/dev/dotfiles/aliases.sh
 PROMPT=%n@%m:%1~%#
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+[[ -s /Users/victormours/.autojump/etc/profile.d/autojump.sh ]] && source /Users/victormours/.autojump/etc/profile.d/autojump.sh
+
+	autoload -U compinit && compinit -u
