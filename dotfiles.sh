@@ -1,2 +1,2 @@
 unalias -m "*"
-source $HOME/dev/dotfiles/aliases.sh
+source $HOME/.dotfiles/aliases.sh
