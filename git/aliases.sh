@@ -6,6 +6,7 @@ explicit_alias gnb 'git checkout -b' # new branch
 explicit_alias gco 'git checkout'
 explicit_alias gcom 'git checkout master'
 explicit_alias gcod 'git checkout development'
+explicit_alias gfix 'git add --all :/; git commit -m "fix"'
 
 explicit_alias gplr 'git pull --rebase'
 
