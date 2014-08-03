@@ -1,6 +1,6 @@
 source $HOME/dev/dotfiles/aliases.sh
 
-PROMPT=%n@%m:%1~%#
+PROMPT='%n@%m:%1~%# '
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
