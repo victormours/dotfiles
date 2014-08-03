@@ -31,11 +31,6 @@ explicit_alias gubu 'gulp build'
 explicit_alias psg 'ps aux | grep'
 explicit_alias m mvim
 
-# grunt
-explicit_alias grngt 'grunt ngtemplates'
-explicit_alias grbu 'grunt build'
-explicit_alias grs 'grunt set'
-
 # deploying
 explicit_alias csd 'bundle exec cap staging deploy'
 
