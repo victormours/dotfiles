@@ -25,6 +25,10 @@ Almost all you need to DEVELOP HARDER!
 Zsh
 ===
 - Explicit aliases!
+- `o`: Alias for `open_project` cd your shell to the given project (with autojump), and opens MacVim there.
+- `m`: alias for `mvim`
+- `v`: alias for `vim`
+- `md`: make a new dir and cd into it
 
 (Mac)Vim
 ===

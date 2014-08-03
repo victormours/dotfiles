@@ -14,12 +14,10 @@ source ~/dev/dotfiles/projects/aliases.sh
 source ~/dev/dotfiles/ssh/aliases.sh
 
 # Edit and reload aliases
-explicit_alias 'ae' 'vim ~/dev/dotfiles/aliases.sh'
-explicit_alias 'ar' 'source ~/dev/dotfiles/aliases.sh'
+explicit_alias 'ae' 'vim $HOME/.dotfiles/aliases.sh'
+explicit_alias 'ar' 'source $HOME/.dotfiles/aliases.sh'
 
 # Custom utils
-explicit_alias c 'cd'
-explicit_alias l 'less -r'
 explicit_alias bd 'bundle'
 explicit_alias be 'bundle exec'
 explicit_alias ber 'bundle exec rspec'
@@ -29,7 +27,6 @@ explicit_alias rp 'bundle exec rspec-preloader'
 explicit_alias gruntt 'grunt test'
 explicit_alias gubu 'gulp build'
 explicit_alias psg 'ps aux | grep'
-explicit_alias m mvim
 
 # deploying
 explicit_alias csd 'bundle exec cap staging deploy'
