@@ -84,7 +84,7 @@ syntax enable
 
 " Solarized theme
 let g:solarized_termtrans = 1
-set background=dark
+set background=light
 colorscheme solarized
 
 if has("gui_running")
@@ -114,3 +114,7 @@ map <C-L> <C-W>l<C-W>_
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 let g:NERDTreeWinSize = 30
+
+" Better search
+set hlsearch
+set incsearch
