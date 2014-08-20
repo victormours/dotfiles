@@ -23,6 +23,9 @@ explicit_alias gci 'git commit'
 explicit_alias gps 'git push'
 explicit_alias gfp "git push -u origin `git rev-parse --abbrev-ref HEAD`" #git first push, for when you push a branch for the first time
 
+explicit_alias gpo 'git push origin'
+explicit_alias gwip 'git commit -am "wip"'
+
 explicit_alias gst 'git stash'
 explicit_alias gsp 'git stash pop'
 explicit_alias gsa 'git stash apply'
