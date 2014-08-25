@@ -7,7 +7,7 @@ ln -s $HOME/.dotfiles/zsh/zshrc $HOME/.zshrc
 
 # Install Autojump
 git clone git://github.com/joelthelion/autojump.git ~/.dotfiles/autojump
-~/.dotfiles/autojump/install.py
+(cd ~/.dotfiles/autojump/ && ./install.py)
 
 
 # Install Vundle
