@@ -9,9 +9,8 @@ function explicit_alias {
   alias $alias="display_command '$command'; $command"
 }
 
-source ~/dev/dotfiles/git/aliases.sh
-source ~/dev/dotfiles/projects/aliases.sh
-source ~/dev/dotfiles/ssh/aliases.sh
+source ~/.dotfiles/git/aliases.sh
+source ~/.dotfiles/projects/aliases.sh
 
 # Edit and reload aliases
 explicit_alias 'ae' 'vim $HOME/.dotfiles/aliases.sh'
