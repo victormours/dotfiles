@@ -1,5 +1,6 @@
-source $HOME/dev/dotfiles/aliases.sh
-source $HOME/dev/dotfiles/zsh/utils.sh
+source $HOME/.dotfiles/aliases.sh
+source $HOME/.dotfiles/zsh/utils.sh
+source $HOME/.dotfiles/zsh/aliases.sh
 
 PROMPT='%n@%m:%1~%# '
 
