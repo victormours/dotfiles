@@ -1,7 +1,6 @@
 # Gratuitously stolen from the amazing @mathiasbynens
 # https://github.com/mathiasbynens/dotfiles/blob/master/.osx
 
-
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
 
@@ -13,7 +12,6 @@ defaults write NSGlobalDomain NSQuitAlwaysKeepsWindows -bool false
 
 # Disable automatic termination of inactive apps
 defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
-
 
 # Disable press-and-hold for keys in favor of key repeat
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false

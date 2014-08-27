@@ -13,3 +13,4 @@ git clone git://github.com/joelthelion/autojump.git ~/.dotfiles/autojump
 # Install Vundle
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
+vim +BundleInstall +q
