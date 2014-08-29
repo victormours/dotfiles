@@ -16,6 +16,8 @@ Installing
 git clone git://github.com/victormours/dotfiles.git ~/.dotfiles
 ~/.dotfiles/install.sh
 ```
+- Install iTerm2
+- Install Solarized for iTerm2
 
 
 Features
