@@ -110,6 +110,11 @@ map <C-K> <C-W>k<C-W>_
 map <C-H> <C-W>h<C-W>_
 map <C-L> <C-W>l<C-W>_
 
+" Open new splits easily
+map vv <C-W>v
+map ss <C-W>s
+map Q  <C-W>q
+
 " Make nerdtree look nice
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1

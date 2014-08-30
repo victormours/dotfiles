@@ -34,8 +34,11 @@ Zsh
 
 (Mac)Vim
 ===
-- use `,f` to open a file tree
-- use `ctrl` with `hjkl` to move from buffer to buffer
+- `,f` opens a file tree
+- `Ctrl` with `hjkl` moves from split to split
+- `vv` opens a vertical split
+- `ss` opens a horizontal one
+- `Q` closes a split
 
 Git
 ===
