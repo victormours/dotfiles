@@ -34,7 +34,8 @@ Zsh
 
 (Mac)Vim
 ===
-- `,f` opens a file tree
+- Space is the leader!
+- ` f` opens a file tree
 - `Ctrl` with `hjkl` moves from split to split
 - `vv` opens a vertical split
 - `ss` opens a horizontal one
