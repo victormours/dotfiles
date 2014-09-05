@@ -145,3 +145,6 @@ if has("gui_macvim")
   noremap <D-0> :tablast<CR>
 endif
 
+
+abbreviate pry! require 'pry'; binding.pry
+abbreviate spec! require 'spec_helper'

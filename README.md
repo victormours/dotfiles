@@ -41,6 +41,11 @@ Zsh
 - `ss` opens a horizontal one
 - `Q` closes a split
 
+Abbreviations!
+-
+- `pry!` for `require 'pry'; binding.pry`
+- `spec!` for `require 'spec_helper'`
+
 Git
 ===
 - Super fast aliases (see `git/aliases`)
