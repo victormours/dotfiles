@@ -36,6 +36,7 @@ Zsh
 ===
 - Space is the leader!
 - ` f` opens a file tree
+- ` d` opensa a fuzzy file finder
 - `Ctrl` with `hjkl` moves from split to split
 - `vv` opens a vertical split
 - `ss` opens a horizontal one
