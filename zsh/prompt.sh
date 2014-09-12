@@ -11,7 +11,7 @@ function set_git_prompt {
 
     git_status_prompt=''
     if [ -n "$git_added" ]; then
-      git_status_prompt+='%{%F{green}%}●%{%f%}'
+      git_status_prompt+='%{%F{green}%}✚%{%f%}'
     fi
     if [ -n "$git_modified" ]; then
       git_status_prompt+='%{%F{yellow}%}●%{%f%}'
