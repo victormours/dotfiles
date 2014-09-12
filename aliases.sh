@@ -13,7 +13,9 @@ function explicit_alias {
 
 preexec_functions=()
 function expand_aliases {
-  if [ $1 != $2 ]; then
+  input_command=$1
+  expanded_command=$2
+  if [ $input_command != $expanded_command ]; then
     print -nP $PROMPT
     echo $2
   fi
