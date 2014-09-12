@@ -2,7 +2,7 @@ source $HOME/.dotfiles/aliases.sh
 source $HOME/.dotfiles/zsh/utils.sh
 source $HOME/.dotfiles/zsh/aliases.sh
 
-PROMPT='%n@%m:%1~%# '
+PROMPT='%{%F{magenta}%}%n%{%F{default}%}@%{%F{yellow}%}%m%{%F{default}%}:%1~ %# '
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
