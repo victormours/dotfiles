@@ -1,20 +1,7 @@
 source $HOME/.dotfiles/aliases.sh
 source $HOME/.dotfiles/zsh/utils.sh
 source $HOME/.dotfiles/zsh/aliases.sh
-
-
-function precmd {
-  if git status &> /dev/null ; then
-    branchname=`git rev-parse --abbrev-ref HEAD`
-    git_prompt="(%{$branchname%}) "
-  else
-    git_prompt=''
-  fi
-}
-
-setopt prompt_subst
-
-PROMPT='%{%F{magenta}%}%n%{%F{default}%}@%{%F{yellow}%}%m%{%F{default}%} %{%F{green}%}%1~%{%F{default}%} %{$git_prompt%}%# '
+source $HOME/.dotfiles/zsh/prompt.sh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
