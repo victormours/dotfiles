@@ -3,11 +3,22 @@ function display_command {
   echo $*
 }
 
+
+declare -A EXPLICIT_ALIASES
 function explicit_alias {
   alias=$1
   command=$2
-  alias $alias="display_command '$command'; $command"
+  alias $alias=$command
 }
+
+preexec_functions=()
+function expand_aliases {
+  if [ $1 != $2 ]; then
+    print -nP $PROMPT
+    echo $2
+  fi
+}
+preexec_functions+=expand_aliases
 
 source ~/.dotfiles/*/aliases.sh
 
