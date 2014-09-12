@@ -28,9 +28,9 @@ function set_git_prompt {
 
 precmd_functions+=set_git_prompt
 
-user_prompt='%{%F{magenta}%}%n%{%F{default}%}@%{%F{yellow}%}%m%{%F{default}%}'
-path_prompt='%{%F{green}%}%1~%{%F{default}%}'
+user_prompt='%{%F{magenta}%}%n%{%f%}@%{%F{yellow}%}%m%{%f%}'
+path_prompt='%{%F{green}%}%1~%{%f%}'
 
 setopt prompt_subst
-PROMPT='%{$user_prompt%} %{$path_prompt%} %{$git_prompt%}%# '
+PROMPT='%{$user_prompt%} %{$path_prompt%} %{$git_prompt%}%{%F{yellow%}%#%{%f%}%  '
 
