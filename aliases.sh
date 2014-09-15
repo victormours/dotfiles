@@ -22,7 +22,9 @@ function expand_aliases {
 }
 preexec_functions+=expand_aliases
 
-source ~/.dotfiles/*/aliases.sh
+for file in ~/.dotfiles/*/aliases.sh; do
+  source "$file"
+done
 
 # Edit and reload aliases
 explicit_alias 'ae' 'vim $HOME/.dotfiles/aliases.sh'
