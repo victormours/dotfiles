@@ -115,6 +115,10 @@ map vv <C-W>v
 map ss <C-W>s
 map Q  <C-W>q
 
+" Open splits on the right and below
+set splitbelow
+set splitright
+
 " Make nerdtree look nice
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
