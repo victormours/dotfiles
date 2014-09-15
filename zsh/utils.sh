@@ -11,3 +11,5 @@ function md {
   mkdir $1
   cd $1
 }
+
+source $HOME/.dotfiles/ruby/utils.sh
