@@ -19,7 +19,7 @@ explicit_alias gaa 'git add --all :/'
 explicit_alias gap 'git add --patch'
 explicit_alias gcm 'git commit -m'
 explicit_alias gci 'git commit'
-explicit_alias gca 'git commit --amend'
+explicit_alias gca 'git add --all :/; git commit --amend'
 
 explicit_alias gps 'git push'
 explicit_alias gfp "git push -u origin \`git rev-parse --abbrev-ref HEAD\`" #git first push, for when you push a branch for the first time
