@@ -76,6 +76,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
+Bundle 'bling/vim-airline'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
