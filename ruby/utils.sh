@@ -9,7 +9,7 @@ function deploy_current_branch {
 
 function open_gem {
   gem_name=$1
-  mvim `bundle show $gem_name`
+  (cd `bundle show $gem_name` && mvim .)
 }
 
 alias cdb=cap_deploy_branch
