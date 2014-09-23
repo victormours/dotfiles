@@ -4,7 +4,6 @@ function display_command {
 }
 
 
-declare -A EXPLICIT_ALIASES
 function explicit_alias {
   alias=$1
   command=$2
