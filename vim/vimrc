@@ -55,8 +55,6 @@ set softtabstop=2
 set tabstop=2
 set expandtab
 
-filetype plugin on
-filetype indent on
 
 " Display tabs and trailing spaces visually
 set list listchars=tab:\ \ ,trail:·
@@ -64,6 +62,7 @@ set list listchars=tab:\ \ ,trail:·
 set nowrap       "Don't wrap lines
 set linebreak    "Wrap lines at convenient points
 
+filetype off
 " Install Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -78,6 +77,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'bling/vim-airline'
 Bundle 'Shougo/neocomplete.vim'
+Bundle 'Keithbsmiley/rspec.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
