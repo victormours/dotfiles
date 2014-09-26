@@ -28,7 +28,6 @@ syntax on
 " the plugins.
 let mapleader = "\<Space>"
 nmap <Leader>rxm :ExtractMethod<Enter>
-nmap <Leader>f :NERDTreeToggle<Enter>
 
 " ================ Turn Off Swap Files ==============
 
@@ -110,12 +109,10 @@ source ~/.dotfiles/vim/splits.vim
 source ~/.dotfiles/vim/tabs.vim
 source ~/.dotfiles/vim/font.vim
 
-source ~/.dotfiles/ruby/ruby.vim
+source ~/.dotfiles/vim/plugins/neocomplete.vim
+source ~/.dotfiles/vim/plugins/nerdtree.vim
 
-" Make nerdtree look nice
-let NERDTreeMinimalUI = 1
-let NERDTreeDirArrows = 1
-let g:NERDTreeWinSize = 30
+source ~/.dotfiles/ruby/ruby.vim
 
 " Better search
 set hlsearch
