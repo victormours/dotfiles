@@ -104,21 +104,13 @@ colorscheme solarized
 if has("gui_running")
 "tell the term has 256 colors
   set t_Co=256
-
-" Show tab number (useful for Cmd-1, Cmd-2.. mapping)
-" For some reason this doesn't work as a regular set command,
-" (the numbers don't show up) so I made it a VimEnter event
-  autocmd VimEnter * set guitablabel=%N:\ %t\ %M
-
-  " Set the font to Inconsolata
-  if has("gui_gtk2")
-    set guifont=Inconsolata\ XL\ 12,Inconsolata\ 15,Monaco\ 12
-  else
-    set guifont=Inconsolata\ XL:h17,Inconsolata:h20,Monaco:h17
-  end
 end
 
 source ~/.dotfiles/vim/splits.vim
+source ~/.dotfiles/vim/tabs.vim
+source ~/.dotfiles/vim/font.vim
+
+source ~/.dotfiles/ruby/ruby.vim
 
 " Make nerdtree look nice
 let NERDTreeMinimalUI = 1
@@ -129,49 +121,7 @@ let g:NERDTreeWinSize = 30
 set hlsearch
 set incsearch
 
-" Tab Navigation
-if has("gui_macvim")
-  " Press Ctrl-Tab to switch between open tabs (like browser tabs) to 
-  " the right side. Ctrl-Shift-Tab goes the other way.
-  noremap <C-Tab> :tabnext<CR>
-  noremap <C-S-Tab> :tabprev<CR>
-
-  " Switch to specific tab numbers with Command-number
-  noremap <D-1> :tabn 1<CR>
-  noremap <D-2> :tabn 2<CR>
-  noremap <D-3> :tabn 3<CR>
-  noremap <D-4> :tabn 4<CR>
-  noremap <D-5> :tabn 5<CR>
-  noremap <D-6> :tabn 6<CR>
-  noremap <D-7> :tabn 7<CR>
-  noremap <D-8> :tabn 8<CR>
-  noremap <D-9> :tabn 9<CR>
-  " Command-0 goes to the last tab
-  noremap <D-0> :tablast<CR>
-endif
-
-
-abbreviate pry! require 'pry'; binding.pry
-abbreviate spec! require 'spec_helper'
-
 " CtrlP mapping
 let g:ctrlp_map = '<Leader>d'
 
-" Neocomplete
-let g:neocomplete#enable_at_startup = 1
-let g:neocomplete#enable_smart_case = 1
-" Set minimum syntax keyword length.
-let g:neocomplete#sources#syntax#min_keyword_length = 3
-
-" Default # of completions is 100, that's crazy.
-let g:neocomplete#max_list = 5
-
-" Map standard Ctrl-N completion to Cmd-Space
-inoremap <D-Space> <C-n>
-
-" Enable omni completion.
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 
