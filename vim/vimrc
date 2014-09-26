@@ -72,13 +72,23 @@ Plugin 'gmarik/Vundle.vim'
 
 " Cool plugins
 Bundle 'scrooloose/nerdtree'
-Bundle 'altercation/vim-colors-solarized'
 Bundle 'kien/ctrlp.vim'
-Bundle 'tpope/vim-fugitive'
-Bundle 'bling/vim-airline'
 Bundle 'Shougo/neocomplete.vim'
+
+" Git
+Bundle 'tpope/vim-fugitive'
+
+" Visuals
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'bling/vim-airline'
+
+" Ruby
 Bundle 'Keithbsmiley/rspec.vim'
 Bundle 'tpope/vim-rails'
+
+" Javascript
+Bundle "pangloss/vim-javascript"
+Bundle 'claco/jasmine.vim'
 Bundle 'burnettk/vim-angular'
 
 call vundle#end()            " required
