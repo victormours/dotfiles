@@ -24,6 +24,12 @@ Features
 ===
 Almost all you need to DEVELOP HARDER!
 
+Design
+===
+I try to stick to the following rules:
+- Cohesiveness: Files are grouped by theme in folders
+- Maximum modularity: Any file should either only load other files or be standalone
+
 Zsh
 ===
 - Explicit aliases!
