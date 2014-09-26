@@ -78,6 +78,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'bling/vim-airline'
 Bundle 'Shougo/neocomplete.vim'
 Bundle 'Keithbsmiley/rspec.vim'
+Bundle 'tpope/vim-rails'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
