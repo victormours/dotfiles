@@ -111,14 +111,11 @@ source ~/.dotfiles/vim/font.vim
 
 source ~/.dotfiles/vim/plugins/neocomplete.vim
 source ~/.dotfiles/vim/plugins/nerdtree.vim
+source ~/.dotfiles/vim/plugins/ctrlp.vim
 
 source ~/.dotfiles/ruby/ruby.vim
 
 " Better search
 set hlsearch
 set incsearch
-
-" CtrlP mapping
-let g:ctrlp_map = '<Leader>d'
-
 
