@@ -3,7 +3,6 @@ function display_command {
   echo $*
 }
 
-
 function explicit_alias {
   alias=$1
   command=$2

@@ -3,9 +3,9 @@ explicit_alias g git
 explicit_alias gd 'git diff'
 explicit_alias gb 'git branch -v'
 explicit_alias gnb 'git checkout -b' # new branch
-explicit_alias gco 'git checkout'
-explicit_alias gcom 'git checkout master'
-explicit_alias gcod 'git checkout development'
+explicit_alias gc 'git checkout'
+explicit_alias gcm 'git checkout master'
+explicit_alias gcd 'git checkout development'
 explicit_alias gfix 'git add --all :/; git commit -m "fix"'
 
 explicit_alias gplr 'git pull --rebase'
