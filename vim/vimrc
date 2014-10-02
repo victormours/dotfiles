@@ -28,7 +28,7 @@ syntax on
 " the plugins.
 let mapleader = "\<Space>"
 nmap <Leader>rxm :ExtractMethod<Enter>
-nmap <Leader>cf :silent !echo -n % \| pbcopy<Enter>
+nmap <Leader>cf :silent !echo -n %:p \| pbcopy<Enter>
 
 " ================ Turn Off Swap Files ==============
 
