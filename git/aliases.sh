@@ -17,7 +17,7 @@ explicit_alias gac 'git add --all :/; git commit -m'
 explicit_alias ga 'git add'
 explicit_alias gaa 'git add --all :/'
 explicit_alias gap 'git add --patch'
-explicit_alias gcm 'git commit -m'
+explicit_alias gcom 'git commit -m'
 explicit_alias gci 'git commit'
 explicit_alias gca 'git add --all :/; git commit --amend'
 
