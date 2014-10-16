@@ -1,4 +1,4 @@
-explicit_alias c 'cd'
+explicit_alias d 'cd'
 
 explicit_alias m mvim
 explicit_alias v vim
