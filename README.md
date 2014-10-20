@@ -47,6 +47,7 @@ Zsh
 - `vv` opens a vertical split
 - `ss` opens a horizontal one
 - `Q` closes a split
+- ` g` opens a grep of the word under the cursor
 
 Abbreviations!
 -

@@ -15,3 +15,6 @@ git clone git://github.com/joelthelion/autojump.git ~/.dotfiles/autojump
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 vim +BundleInstall +q
+
+# Brew specific installs
+brew install the_silver_searcher
