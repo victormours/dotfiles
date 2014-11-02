@@ -76,6 +76,7 @@ Plugin 'gmarik/Vundle.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Shougo/neocomplete.vim'
+Bundle 'tommcdo/vim-exchange.git'
 
 " Git
 Bundle 'tpope/vim-fugitive'
