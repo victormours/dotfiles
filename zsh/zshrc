@@ -14,3 +14,6 @@ autoload -U compinit && compinit -u
 
 # Allow opening a bunch of files
 ulimit -n 1024
+
+# Haskell
+export PATH="$HOME/Library/Haskell/bin:$PATH"
