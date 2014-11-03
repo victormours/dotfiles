@@ -4,6 +4,7 @@ source $HOME/.dotfiles/aliases.sh
 source $HOME/.dotfiles/zsh/utils.sh
 source $HOME/.dotfiles/zsh/aliases.sh
 source $HOME/.dotfiles/zsh/prompt.sh
+source $HOME/.dotfiles/zsh/history.sh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
