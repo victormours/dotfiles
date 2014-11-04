@@ -73,5 +73,6 @@ explicit_alias grsh 'git reset --hard'
 explicit_alias gcln 'git clean'
 explicit_alias 'gclndf' 'git clean -df'
 explicit_alias 'gclndfx' 'git clean -dfx'
+alias gcp='git cherry pick'
 
 
