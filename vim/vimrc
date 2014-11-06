@@ -97,6 +97,7 @@ Bundle 'tpope/vim-rails'
 Bundle "pangloss/vim-javascript"
 Bundle 'claco/jasmine.vim'
 Bundle 'burnettk/vim-angular'
+Bundle "kchmck/vim-coffee-script"
 
 call vundle#end()            " required
 filetype plugin indent on    " required
