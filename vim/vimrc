@@ -145,5 +145,5 @@ endif
 nnoremap <Leader>g :grep! "\b<C-R><C-W>\b"<CR>:cw<CR><CR>
 
 " Move normally between wrapped lines
-nnoremap j gj
-nnoremap k gk
+nmap j gj
+nmap k gk
