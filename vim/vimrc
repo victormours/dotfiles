@@ -92,6 +92,7 @@ Bundle "tomtom/tcomment_vim.git"
 " Ruby
 Bundle 'Keithbsmiley/rspec.vim'
 Bundle 'tpope/vim-rails'
+Bundle 'ecomba/vim-ruby-refactoring'
 
 " Javascript
 Bundle "pangloss/vim-javascript"
