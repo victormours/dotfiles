@@ -1,11 +1,11 @@
-explicit_alias d 'cd'
+alias d='cd'
 
-explicit_alias m mvim
-explicit_alias v vim
+alias m=mvim
+alias v=vim
 
-explicit_alias s 'ssh'
+alias s='ssh'
 
-explicit_alias l 'less -r'
 alias t=time
+alias l='less -r'
 
-explicit_alias psg 'ps aux | grep'
+alias psg='ps aux | grep'

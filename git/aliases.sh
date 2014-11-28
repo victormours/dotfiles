@@ -1,47 +1,47 @@
 # Git essentials
-explicit_alias g git
-explicit_alias gd 'git diff'
-explicit_alias gb 'git branch -v'
-explicit_alias gnb 'git checkout -b' # new branch
-explicit_alias gc 'git checkout'
-explicit_alias c 'git checkout'
-explicit_alias gcm 'git checkout master'
-explicit_alias gcd 'git checkout development'
-explicit_alias gfix 'git add --all :/; git commit -m "fix"'
+alias g=git
+alias gd='git diff'
+alias gb='git branch -v'
+alias gnb='git checkout -b' # new branch
+alias gc='git checkout'
+alias c='git checkout'
+alias gcm='git checkout master'
+alias gcd='git checkout development'
+alias gfix='git add --all :/; git commit -m "fix"'
 
-explicit_alias gplr 'git pull --rebase'
+alias gplr='git pull --rebase'
 
-explicit_alias gs 'git status'
-explicit_alias gsh 'git show'
+alias gs='git status'
+alias gsh='git show'
 
-explicit_alias gac 'git add --all :/; git commit -m'
-explicit_alias ga 'git add'
-explicit_alias gaa 'git add --all :/'
-explicit_alias gap 'git add --patch'
-explicit_alias gcom 'git commit -m'
-explicit_alias gci 'git commit'
-explicit_alias gca 'git add --all :/; git commit --amend'
+alias gac='git add --all :/; git commit -m'
+alias ga='git add'
+alias gaa='git add --all :/'
+alias gap='git add --patch'
+alias gcim='git commit -m'
+alias gci='git commit'
+alias gca='git add --all :/; git commit --amend'
 
-explicit_alias gps 'git push'
-explicit_alias gfp "git push -u origin \`git rev-parse --abbrev-ref HEAD\`" #git first push, for when you push a branch for the first time
-explicit_alias gsb "git rev-parse --abbrev-ref HEAD" # git show branch
+alias gps='git push'
+alias gfp="git push -u origin \`git rev-parse --abbrev-ref HEAD\`" #git first push, for when you push a branch for the first time
+alias gsb="git rev-parse --abbrev-ref HEAD" # git show branch
 
-explicit_alias gpo 'git push origin'
-explicit_alias gwip 'git commit -am "wip"'
+alias gpo='git push origin'
+alias gwip='git commit -am "wip"'
 
-explicit_alias gst 'git stash'
-explicit_alias gsp 'git stash pop'
-explicit_alias gsa 'git stash apply'
+alias gst='git stash'
+alias gsp='git stash pop'
+alias gsa='git stash apply'
 
-explicit_alias guns 'git reset HEAD'
-explicit_alias gunc 'git reset --soft HEAD\^'
+alias guns='git reset HEAD'
+alias gunc='git reset --soft HEAD\^'
 
-explicit_alias gl 'git log --graph --date=short'
-explicit_alias gls 'git log --graph --date=short | head'
+alias gl='git log --graph --date=short'
+alias gls='git log --graph --date=short | head'
 
-explicit_alias gri 'git rebase -i'
-explicit_alias grim 'git rebase -i master'
-explicit_alias grid 'git rebase -i development'
+alias gri='git rebase -i'
+alias grim='git rebase -i master'
+alias grid='git rebase -i development'
 
 explicit_alias gdd 'git diff development'
 

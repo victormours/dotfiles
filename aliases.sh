@@ -1,8 +1,3 @@
-function display_command {
-  print -nP $PROMPT
-  echo $*
-}
-
 function explicit_alias {
   alias=$1
   command=$2
