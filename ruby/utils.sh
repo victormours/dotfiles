@@ -1,6 +1,6 @@
 function cap_deploy_branch {
   branchname=$1
-  bundle exec cap staging deploy -S branch=$branchname
+  bundle exec cap sandbox deploy -S branch=$branchname
 }
 
 function deploy_current_branch {

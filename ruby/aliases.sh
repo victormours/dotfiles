@@ -6,4 +6,4 @@ alias bec='bundle exec cucumber'
 explicit_alias rp 'bundle exec rspec-preloader'
 
 # deploying
-explicit_alias csd 'bundle exec cap staging deploy'
+alias csd='bundle exec cap sandbox deploy'

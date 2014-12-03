@@ -40,6 +40,7 @@ alias gl='git log --graph --date=short'
 alias gls='git log --graph --date=short | head'
 
 alias gri='git rebase -i'
+alias grc='git rebase --continue'
 alias grim='git rebase -i master'
 alias grid='git rebase -i development'
 
