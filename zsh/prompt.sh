@@ -7,6 +7,7 @@ function set_git_prompt {
 
     git_added=`echo $git_status | grep A`
     git_modified=`echo $git_status | grep M`
+    git_renamed=`echo $git_status | grep R`
     git_untracked=`echo $git_status | grep \?\?`
 
     git_status_prompt=''
@@ -14,6 +15,9 @@ function set_git_prompt {
       git_status_prompt+='%{%F{green}%}✚%{%f%}'
     fi
     if [ -n "$git_modified" ]; then
+      git_status_prompt+='%{%F{yellow}%}●%{%f%}'
+    fi
+    if [ -n "$git_renamed" ]; then
       git_status_prompt+='%{%F{yellow}%}●%{%f%}'
     fi
     if [ -n "$git_untracked" ]; then
