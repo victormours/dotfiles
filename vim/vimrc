@@ -92,6 +92,7 @@ Bundle "tomtom/tcomment_vim.git"
 " Ruby
 Bundle 'Keithbsmiley/rspec.vim'
 Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-endwise'
 Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'emilsoman/spec-outline.vim'
 
