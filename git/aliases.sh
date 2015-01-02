@@ -11,7 +11,7 @@ alias gfix='git add --all :/; git commit -m "fix"'
 
 alias gplr='git pull --rebase'
 
-alias gs='git status'
+alias s='git status'
 alias gsh='git show'
 
 alias gac='git add --all :/; git commit -m'
