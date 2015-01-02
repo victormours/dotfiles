@@ -1,5 +1,4 @@
-explicit_alias b 'bundle'
-explicit_alias be 'bundle exec'
+explicit_alias bi 'bundle install'
 
 alias rs='bundle exec rspec'
 alias bec='bundle exec cucumber'
