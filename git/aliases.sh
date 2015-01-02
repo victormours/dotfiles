@@ -1,17 +1,17 @@
 # Git essentials
 alias g=git
-alias gd='git diff'
+alias d='git diff'
+alias s='git status'
+alias c='git checkout'
+
 alias gb='git branch -v'
 alias gnb='git checkout -b' # new branch
-alias gc='git checkout'
-alias c='git checkout'
 alias gcm='git checkout master'
 alias gcd='git checkout development'
 alias gfix='git add --all :/; git commit -m "fix"'
 
 alias gplr='git pull --rebase'
 
-alias s='git status'
 alias gsh='git show'
 
 alias gac='git add --all :/; git commit -m'

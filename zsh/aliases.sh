@@ -1,5 +1,3 @@
-alias d='cd'
-
 alias m=mvim
 alias v=vim
 
