@@ -18,3 +18,5 @@ ulimit -n 1024
 
 # Haskell
 export PATH="$HOME/Library/Haskell/bin:$PATH"
+
+export EDITOR=vim

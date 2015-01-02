@@ -19,6 +19,8 @@ function top_commands {
     head -n20
 }
 
+alias tc=top_commands
+
 source $HOME/.dotfiles/ruby/utils.sh
 source $HOME/.dotfiles/git/utils.sh
 
