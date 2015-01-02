@@ -44,6 +44,8 @@ alias grc='git rebase --continue'
 alias grim='git rebase -i master'
 alias grid='git rebase -i development'
 
+alias gclone='git clone'
+
 explicit_alias gdd 'git diff development'
 
 # Other git aliases
