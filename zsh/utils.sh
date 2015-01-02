@@ -12,6 +12,13 @@ function md {
   cd $1
 }
 
+function top_commands {
+  cat ~/.zsh_history|cut -d ';' -f 2- 2>/dev/null |
+    awk '{a[$1]++ } END{for(i in a){print a[i] " " i}}'|
+    sort -rn |
+    head -n20
+}
+
 source $HOME/.dotfiles/ruby/utils.sh
 source $HOME/.dotfiles/git/utils.sh
 
