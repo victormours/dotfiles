@@ -18,3 +18,6 @@ vim +BundleInstall +q
 
 # Brew specific installs
 brew install the_silver_searcher
+brew install rbenv-bundler
+
+rbenv bundler on
