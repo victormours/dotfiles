@@ -95,6 +95,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-endwise'
 Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'emilsoman/spec-outline.vim'
+Bundle 'victormours/vim-rspec'
 
 " Javascript
 Bundle "pangloss/vim-javascript"
@@ -126,6 +127,7 @@ source ~/.dotfiles/vim/plugins/nerdtree.vim
 source ~/.dotfiles/vim/plugins/ctrlp.vim
 source ~/.dotfiles/vim/plugins/tcomment.vim
 source ~/.dotfiles/vim/plugins/spec-outline.vim
+source ~/.dotfiles/vim/plugins/vim-rspec.vim
 
 source ~/.dotfiles/ruby/ruby.vim
 
