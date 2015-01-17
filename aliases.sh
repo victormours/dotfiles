@@ -20,8 +20,8 @@ for file in ~/.dotfiles/*/aliases.sh; do
 done
 
 # Edit and reload aliases
-explicit_alias 'ae' 'vim $HOME/.dotfiles/aliases.sh'
-explicit_alias 'ar' 'source $HOME/.dotfiles/aliases.sh'
+alias 'ae' 'vim $HOME/.dotfiles/aliases.sh'
+alias 'ar' 'source $HOME/.dotfiles/aliases.sh'
 
 # Custom utils
 explicit_alias prs 'touch tmp/restart.txt; echo "Pow restarted"'
