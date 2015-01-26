@@ -1,4 +1,9 @@
+# Automatically expand all aliases:
+# - don't forget the actual commands
+# - don't confuse your pairing partner
+
 preexec_functions=()
+
 function expand_aliases {
   input_command=$1
   expanded_command=$2
@@ -7,6 +12,7 @@ function expand_aliases {
     echo $2
   fi
 }
+
 preexec_functions+=expand_aliases
 
 for file in ~/.dotfiles/*/aliases.sh; do
@@ -17,10 +23,3 @@ done
 alias ae='vim $HOME/.dotfiles/aliases.sh'
 alias ar='source $HOME/.dotfiles/aliases.sh'
 
-# Custom utils
-alias prs='touch tmp/restart.txt; echo "Pow restarted"'
-alias gruntt='grunt test'
-alias gubu='gulp build'
-
-
-alias mail='open https://mail.google.com'
