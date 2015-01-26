@@ -121,6 +121,7 @@ end
 source ~/.dotfiles/vim/splits.vim
 source ~/.dotfiles/vim/tabs.vim
 source ~/.dotfiles/vim/font.vim
+source ~/.dotfiles/vim/ruby.vim
 
 source ~/.dotfiles/vim/plugins/neocomplete.vim
 source ~/.dotfiles/vim/plugins/nerdtree.vim
@@ -128,8 +129,6 @@ source ~/.dotfiles/vim/plugins/ctrlp.vim
 source ~/.dotfiles/vim/plugins/tcomment.vim
 source ~/.dotfiles/vim/plugins/spec-outline.vim
 source ~/.dotfiles/vim/plugins/vim-rspec.vim
-
-source ~/.dotfiles/ruby/ruby.vim
 
 " Better search
 set hlsearch
