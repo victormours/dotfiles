@@ -4,7 +4,7 @@ function open_project {
   mvim .
 }
 
-explicit_alias o open_project
+alias o=open_project
 
 function md {
   directory_name=$1

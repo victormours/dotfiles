@@ -1,9 +1,3 @@
-function explicit_alias {
-  alias=$1
-  command=$2
-  alias $alias=$command
-}
-
 preexec_functions=()
 function expand_aliases {
   input_command=$1
@@ -20,13 +14,13 @@ for file in ~/.dotfiles/*/aliases.sh; do
 done
 
 # Edit and reload aliases
-alias 'ae' 'vim $HOME/.dotfiles/aliases.sh'
-alias 'ar' 'source $HOME/.dotfiles/aliases.sh'
+alias ae='vim $HOME/.dotfiles/aliases.sh'
+alias ar='source $HOME/.dotfiles/aliases.sh'
 
 # Custom utils
-explicit_alias prs 'touch tmp/restart.txt; echo "Pow restarted"'
-explicit_alias gruntt 'grunt test'
-explicit_alias gubu 'gulp build'
+alias prs='touch tmp/restart.txt; echo "Pow restarted"'
+alias gruntt='grunt test'
+alias gubu='gulp build'
 
 
-explicit_alias mail 'open https://mail.google.com'
+alias mail='open https://mail.google.com'
