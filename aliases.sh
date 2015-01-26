@@ -20,6 +20,10 @@ for file in ~/.dotfiles/*/aliases.sh; do
 done
 
 # Edit and reload aliases
-alias ae='vim $HOME/.dotfiles/aliases.sh'
+function ae {
+  alias_category=$1
+  vim $HOME/.dotfiles/$alias_category/aliases.sh
+}
+
 alias ar='source $HOME/.dotfiles/aliases.sh'
 
