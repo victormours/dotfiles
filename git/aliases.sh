@@ -4,10 +4,12 @@ alias d='git diff'
 alias s='git status'
 alias c='git checkout'
 
-alias gb='git branch -v'
-alias gnb='git checkout -b' # new branch
+alias b='git branch -v'
+alias nb='git checkout -b' # new branch
+
 alias gcm='git checkout master'
-alias gcd='git checkout development'
+alias gd='git checkout development'
+
 alias gfix='git add --all :/; git commit -m "fix"'
 
 alias gplr='git pull --rebase'
