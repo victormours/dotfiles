@@ -5,6 +5,7 @@ These are mostly stolen from [skwp's amazing Yadr](https://github.com/skwp/dotfi
 
 Featuring:
 =
+Almost all you need to DEVELOP HARDER!
 - zsh
 - Macvim
 - git
@@ -18,11 +19,6 @@ git clone git://github.com/victormours/dotfiles.git ~/.dotfiles
 ```
 - Install iTerm2
 - Install Solarized for iTerm2
-
-
-Features
-===
-Almost all you need to DEVELOP HARDER!
 
 Design
 ===
