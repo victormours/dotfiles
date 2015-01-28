@@ -1,7 +1,19 @@
+[color]
+  ui = true
+[color "branch"]
+  current = green reverse
+  local = green
+  remote = blue
 [push]
   # 'git push' will push the current branch to its tracking branch
   # the usual default is to push all branches
   default = tracking
 [user]
-	name = Victor Mours
-	email = victor.mours@tigerlilyapps.com
+  name = Victor Mours
+  email = victor.mours@tigerlilyapps.com
+
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red
+  new = green
