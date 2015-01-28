@@ -61,8 +61,4 @@ Git
   - `gac "my commit message"` to add all and commit
   - `gunc` to uncommit
   - `guns` to unstage
-- My personal favorites:
-  - `gplr` for `git pull --rebase`
-  - `gps` to push
-  - `gri` fo `git rebase -i`
 
