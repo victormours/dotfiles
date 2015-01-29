@@ -1,5 +1,6 @@
 alias bi='bundle install'
 alias bu='bundle update'
+alias be='bundle exec'
 
 alias rs='bundle exec rspec'
 alias rp='bundle exec rspec-preloader'
