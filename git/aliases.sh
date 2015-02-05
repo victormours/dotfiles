@@ -12,7 +12,7 @@ alias gd='git checkout development'
 
 alias gfix='git add --all :/; git commit -m "fix"'
 
-alias gplr='git pull --rebase'
+alias gpl='git pull --rebase'
 
 alias gsh='git show'
 
@@ -24,7 +24,7 @@ alias gcim='git commit -m'
 alias gci='git commit'
 alias gca='git add --all :/; git commit --amend'
 
-alias gps='git push'
+alias gp='git push'
 alias gfp="git push -u origin \`git rev-parse --abbrev-ref HEAD\`" #git first push, for when you push a branch for the first time
 alias gsb="git rev-parse --abbrev-ref HEAD" # git show branch
 
