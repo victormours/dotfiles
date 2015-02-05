@@ -21,6 +21,9 @@ function remote_shell {
 }
 alias resh=remote_shell
 
+alias rstg='remote_shell staging'
+alias rsbx='remote_shell sandbox'
+
 function remote_console {
   environment=$1
   cap $environment remote:console
