@@ -16,7 +16,7 @@ alias gpl='git pull --rebase'
 
 alias gsh='git show'
 
-alias gac='git add --all :/; git commit -m'
+alias gc='git add --all :/; git commit -m'
 alias ga='git add'
 alias gaa='git add --all :/'
 alias gap='git add --patch'
