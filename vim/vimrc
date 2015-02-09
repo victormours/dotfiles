@@ -152,3 +152,6 @@ nnoremap <Leader>g :grep! "\b<C-R><C-W>\b"<CR>:cw<CR><CR>
 " Move normally between wrapped lines
 nmap j gj
 nmap k gk
+
+" always show status line
+set laststatus=2
