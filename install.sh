@@ -21,3 +21,5 @@ brew install the_silver_searcher
 brew install rbenv-bundler
 
 rbenv bundler on
+
+gem install hub
