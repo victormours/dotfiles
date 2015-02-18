@@ -11,6 +11,7 @@ alias gcm='git checkout master'
 alias gd='git checkout development'
 
 alias gfix='git add --all :/; git commit -m "fix"'
+alias gwip='git add --all :/; git commit -am "wip"'
 
 alias gpl='git pull --rebase'
 
@@ -29,7 +30,6 @@ alias gpf='git push --force'
 alias gfp="git push -u origin \`git rev-parse --abbrev-ref HEAD\`" #git first push, for when you push a branch for the first time
 
 alias gpo='git push origin'
-alias gwip='git commit -am "wip"'
 
 alias gst='git stash'
 alias gsp='git stash pop'
