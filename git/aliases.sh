@@ -25,6 +25,7 @@ alias gci='git commit'
 alias gca='git add --all :/; git commit --amend'
 
 alias gp='git push'
+alias gpf='git push --force'
 alias gfp="git push -u origin \`git rev-parse --abbrev-ref HEAD\`" #git first push, for when you push a branch for the first time
 
 alias gpo='git push origin'
