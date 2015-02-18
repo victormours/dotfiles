@@ -55,7 +55,6 @@ alias gcb='git rev-parse --abbrev-ref HEAD' #current branch
 alias gdd='git diff development'
 alias gdm='git diff master'
 alias gi='vim .gitignore'
-alias gcp='git cp'
 alias gm='git merge --no-ff'
 alias gmd='git merge --no-ff development'
 alias gmm='git merge --no-ff master'
@@ -79,6 +78,6 @@ alias grsh='git reset --hard'
 alias gcln='git clean'
 alias gclndf='git clean -df'
 alias gclndfx='git clean -dfx'
-alias gcp='git cherry pick'
+alias gcp='git cherry-pick'
 
 
