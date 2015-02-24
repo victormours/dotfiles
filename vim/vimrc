@@ -96,6 +96,8 @@ Bundle 'tpope/vim-endwise'
 Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'emilsoman/spec-outline.vim'
 Bundle 'victormours/vim-rspec'
+Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'kana/vim-textobj-user'
 
 " Javascript
 Bundle "pangloss/vim-javascript"
@@ -129,6 +131,7 @@ source ~/.dotfiles/vim/plugins/ctrlp.vim
 source ~/.dotfiles/vim/plugins/tcomment.vim
 source ~/.dotfiles/vim/plugins/spec-outline.vim
 source ~/.dotfiles/vim/plugins/vim-rspec.vim
+source ~/.dotfiles/vim/plugins/vim-textobj-rubyblock.vim
 
 " Better search
 set hlsearch
@@ -155,3 +158,8 @@ nmap k gk
 
 " always show status line
 set laststatus=2
+
+" Enable filetype plugins for vim-textobj-rubyblock
+if has("autocmd")
+  filetype indent plugin on
+endif
