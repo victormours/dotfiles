@@ -10,8 +10,8 @@ alias nb='git checkout -b' # new branch
 alias gcm='git checkout master'
 alias gd='git checkout development'
 
-alias gfix='git add --all :/; git commit -m "fix"'
-alias gwip='git add --all :/; git commit -am "wip"'
+alias f='git add --all :/; git commit -m "fix"'
+alias wip='git add --all :/; git commit -am "wip"'
 
 alias gpl='git pull --rebase'
 
