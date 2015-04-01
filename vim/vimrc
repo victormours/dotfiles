@@ -73,6 +73,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Shougo/neocomplete.vim'
 Bundle 'tommcdo/vim-exchange.git'
+Bundle 'ntpeters/vim-better-whitespace'
 
 " Git
 Bundle 'tpope/vim-fugitive'
