@@ -57,10 +57,6 @@ set softtabstop=2
 set tabstop=2
 set expandtab
 
-
-" Display tabs and trailing spaces visually
-set list listchars=tab:\ \ ,trail:·
-
 set nowrap       "Don't wrap lines
 set linebreak    "Wrap lines at convenient points
 
@@ -132,6 +128,7 @@ source ~/.dotfiles/vim/plugins/tcomment.vim
 source ~/.dotfiles/vim/plugins/spec-outline.vim
 source ~/.dotfiles/vim/plugins/vim-rspec.vim
 source ~/.dotfiles/vim/plugins/vim-textobj-rubyblock.vim
+source ~/.dotfiles/vim/plugins/vim-better-whitespace.vim
 
 " Better search
 set hlsearch
