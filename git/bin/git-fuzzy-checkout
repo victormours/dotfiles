@@ -1,0 +1,47 @@
+#!/usr/bin/env python
+"""
+git fuzzy-checkout by @minrk
+with slight modifications by @victormours
+
+Same as `git checkout branch`, but with fuzzy matching if checkout fails.
+Turns `git checkout barnch` into `git checkout branch`,
+assuming `branch` is a branch.
+"""
+
+import difflib
+import sys
+
+from subprocess import check_output, check_call, CalledProcessError
+
+def git_branches():
+    """construct list of git branches"""
+    text = check_output(["git", "branch"]).decode('utf8', 'replace')
+    return [ line.lstrip('*').strip() for line in text.splitlines() ]
+
+def proximity(a, b):
+    """measure proximity of two strings"""
+    return difflib.SequenceMatcher(None, a, b).ratio()
+
+def fuzzy_checkout(branch):
+    """wrapper for git-checkout that does fuzzy-matching
+
+    Helps with typos, etc. by automatically checking out the closest match
+    if the initial checkout call fails.
+    """
+    try:
+        check_call(["git", "checkout", branch])
+    except CalledProcessError:
+        branches = git_branches()
+        branches = sorted(branches, key=lambda b : proximity(branch, b))
+        best = branches[-1]
+        if proximity(best, branch) > 0.3:
+            try:
+                check_call(["git", "checkout", best])
+            except CalledProcessError:
+                return 1
+
+    return 0
+
+if __name__ == '__main__':
+    sys.exit(fuzzy_checkout(sys.argv[1]))
+

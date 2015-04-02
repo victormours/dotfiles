@@ -20,3 +20,5 @@ ulimit -n 1024
 export PATH="$HOME/Library/Haskell/bin:$PATH"
 
 export EDITOR=vim
+
+export PATH="$HOME/.dotfiles/git/bin:$PATH"
