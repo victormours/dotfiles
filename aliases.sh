@@ -27,6 +27,7 @@ function ae {
   git commit -am "Improving aliases"
   git push
   cd -
+  source $HOME/.dotfiles/aliases.sh
 }
 
 alias ar='source $HOME/.dotfiles/aliases.sh'
