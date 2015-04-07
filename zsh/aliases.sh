@@ -2,7 +2,7 @@ alias m='mvim +NERDTreeToggle'
 alias v=vim
 
 alias t=time
-alias l='less -r'
+alias le='less -r'
 
 alias psg='ps aux | grep'
 

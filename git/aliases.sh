@@ -14,7 +14,7 @@ alias f='git add --all :/; git commit -m "fix"'
 alias fp='git add --all :/; git commit -m "fix"; git push'
 alias wip='git add --all :/; git commit -am "wip"'
 
-alias gp='git pull --rebase'
+alias l='git pull --rebase'
 
 alias gsh='git show'
 
