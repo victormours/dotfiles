@@ -14,7 +14,7 @@ alias f='git add --all :/; git commit -m "fix"'
 alias fp='git add --all :/; git commit -m "fix"; git push'
 alias wip='git add --all :/; git commit -am "wip"'
 
-alias gpl='git pull --rebase'
+alias gp='git pull --rebase'
 
 alias gsh='git show'
 
@@ -25,8 +25,8 @@ alias gap='git add --patch'
 alias com='git commit -m'
 alias gca='git add --all :/; git commit --amend'
 
-alias gp='git push'
-alias gpf='git push --force'
+alias p='git push'
+alias pf='git push --force'
 alias gfp="git push -u origin \`git rev-parse --abbrev-ref HEAD\`" #git first push, for when you push a branch for the first time
 
 alias gpo='git push origin'

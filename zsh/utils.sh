@@ -1,7 +1,7 @@
 function open_project {
   project_name=$1
   autojump $project_name
-  mvim .
+  mvim
 }
 
 alias o=open_project
