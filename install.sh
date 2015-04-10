@@ -1,3 +1,5 @@
+set -e
+
 # Change shell to zsh
 chsh -s $(which zsh)
 
