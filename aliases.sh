@@ -9,7 +9,7 @@ function expand_aliases {
   expanded_command=$2
   if [ $input_command != $expanded_command ]; then
     print -nP $PROMPT
-    echo $2
+    echo $expanded_command
   fi
 }
 
