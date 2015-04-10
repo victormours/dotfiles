@@ -24,7 +24,7 @@ function set_git_prompt {
       git_status_prompt+='%{%F{red}%}●%{%f%}'
     fi
 
-    git_prompt="(%{$branchname%}%{$git_status_prompt%}) "
+    git_prompt="($branchname$git_status_prompt) "
   else
     git_prompt=''
   fi
@@ -32,7 +32,7 @@ function set_git_prompt {
 
 precmd_functions+=set_git_prompt
 
-user_prompt='%{%F{magenta}%}%n%{%f%}@%{%F{yellow}%}%m%{%f%}'
+user_prompt='%{%F{magenta}%}%n%{%f%}'
 path_prompt='%{%F{green}%}%1~%{%f%}'
 
 setopt prompt_subst
