@@ -1,0 +1,10 @@
+#! /usr/bin/osascript
+tell application "iTerm"
+  activate
+  tell the current terminal
+    tell current session
+      write text "ls"
+    end tell
+  end tell
+end tell
+
