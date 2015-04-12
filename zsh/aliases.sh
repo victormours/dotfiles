@@ -1,4 +1,4 @@
-alias m='mvim +NERDTreeToggle'
+alias mm='mvim +NERDTreeToggle'
 alias v=vim
 
 alias t=time
