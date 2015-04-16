@@ -11,7 +11,6 @@ alias cm='git checkout master'
 alias gd='git checkout development'
 
 alias f='git add --all :/; git commit -m "fix"'
-alias fp='git add --all :/; git commit -m "fix"; git push'
 alias wip='git add --all :/; git commit -am "wip"'
 
 alias l='git pull --rebase'
@@ -19,24 +18,23 @@ alias l='git pull --rebase'
 alias gsh='git show'
 
 alias gc='git add --all :/; git commit -m'
-alias ga='git add'
-alias gaa='git add --all :/'
-alias gap='git add --patch'
+alias a='git add'
+alias aa='git add --all :/'
+alias ap='git add --patch'
 alias com='git commit -m'
 alias gca='git add --all :/; git commit --amend'
 
 alias p='git push'
 alias pf='git push --force'
-alias gfp="git push -u origin \`git rev-parse --abbrev-ref HEAD\`" #git first push, for when you push a branch for the first time
+alias fp="git push -u origin \`git rev-parse --abbrev-ref HEAD\`" #git first push, for when you push a branch for the first time
 
 alias gpo='git push origin'
 
-alias gst='git stash'
-alias gsp='git stash pop'
-alias gsa='git stash apply'
+alias st='git stash'
+alias sp='git stash pop'
 
-alias guns='git reset HEAD'
-alias gunc='git reset --soft HEAD\^'
+alias uns='git reset HEAD'
+alias unc='git reset --soft HEAD\^'
 
 alias gl='git log --graph --date=short'
 alias gls='git log --graph --date=short | head'
