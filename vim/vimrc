@@ -104,6 +104,7 @@ Bundle 'emilsoman/spec-outline.vim'
 Bundle 'victormours/vim-rspec'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'kana/vim-textobj-user'
+Bundle 'jgdavey/vim-blockle'
 
 
 call vundle#end()            " required
