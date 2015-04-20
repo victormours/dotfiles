@@ -14,11 +14,9 @@ function check-alias-and-accept {
       zle kill-whole-line
       zle reset-prompt
     else
-      region_highlight+=("0 $#BUFFER fg=green")
       zle accept-line
     fi
   else
-    region_highlight+=("0 $#BUFFER fg=green")
     zle accept-line
   fi
 }
@@ -26,3 +24,8 @@ function check-alias-and-accept {
 zle -N check-alias-and-accept
 bindkey '^J' check-alias-and-accept
 bindkey '^M' check-alias-and-accept
+
+function zle-line-finish {
+  region_highlight+=("0 $#BUFFER fg=green")
+}
+zle -N zle-line-finish
