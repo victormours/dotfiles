@@ -14,9 +14,11 @@ function check-alias-and-accept {
       zle kill-whole-line
       zle reset-prompt
     else
+      region_highlight+=("0 $#BUFFER fg=green")
       zle accept-line
     fi
   else
+    region_highlight+=("0 $#BUFFER fg=green")
     zle accept-line
   fi
 }
