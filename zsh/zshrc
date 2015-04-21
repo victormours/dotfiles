@@ -6,7 +6,7 @@ source $HOME/.dotfiles/zsh/aliases.sh
 source $HOME/.dotfiles/zsh/prompt.sh
 source $HOME/.dotfiles/zsh/history.sh
 source $HOME/.dotfiles/zsh/vimify.sh
-
+source $HOME/.dotfiles/zsh/visible_commands.sh
 source $HOME/.dotfiles/zsh/mandatory_aliases.sh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
