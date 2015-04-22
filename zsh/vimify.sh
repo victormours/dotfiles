@@ -1,6 +1,8 @@
 bindkey -v # Vi keybinding
 
-# Keep the default backwards search
+# Keep some defaults
+bindkey '^a' beginning-of-line
+bindkey '^e' end-of-line
 bindkey '^r' history-incremental-search-backward
 
 function zle-line-init zle-keymap-select {
