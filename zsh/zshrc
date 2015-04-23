@@ -25,4 +25,3 @@ export PATH="$HOME/Library/Haskell/bin:$PATH"
 
 export EDITOR=vim
 
-autojump
