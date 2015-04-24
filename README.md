@@ -3,12 +3,6 @@
 
 These are mostly stolen from [skwp's amazing Yadr](https://github.com/skwp/dotfiles).
 
-## What you get
-- awesome shell aliases
-- blazingly fast git workflow
-- sweet vim setup
-- and much more!
-
 Installing
 ===
 ```
@@ -19,11 +13,17 @@ git clone git://github.com/victormours/dotfiles.git ~/.dotfiles
 - Install Solarized for iTerm2
 - Recommended: remap Capslock to Escape with [Seil](https://pqrs.org/osx/karabiner/seil.html.en)
 
+## What you get
+- awesome shell aliases
+- blazingly fast git workflow
+- sweet vim setup
+- and much more!
+
 Zsh
 ===
 - Explicit aliases! They expand automatically when you use them.
-- `m`: alias for `mvim`
-- `md`: make a new dir and cd into it
+- Mandatory aliases: so you don't forget to use them.
+![Mandatory Aliases](https://cloud.githubusercontent.com/assets/1840367/7302861/9e437a96-e9ec-11e4-9978-9f33f21bd7d9.gif)
 
 (Mac)Vim
 ===
