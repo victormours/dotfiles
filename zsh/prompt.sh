@@ -9,6 +9,7 @@ function set_git_prompt {
     git_modified=`echo $git_status | grep M`
     git_renamed=`echo $git_status | grep R`
     git_untracked=`echo $git_status | grep \?\?`
+    git_deleted=`echo $git_status | grep D`
 
     git_status_prompt=''
     if [ -n "$git_added" ]; then
@@ -22,6 +23,9 @@ function set_git_prompt {
     fi
     if [ -n "$git_untracked" ]; then
       git_status_prompt+='%{%F{red}%}●%{%f%}'
+    fi
+    if [ -n "$git_deleted" ]; then
+      git_status_prompt+='%{%F{red}%}-%{%f%}'
     fi
 
     git_prompt="($branchname$git_status_prompt) "
