@@ -17,7 +17,7 @@ alias og=open_gem
 
 function remote_shell {
   environment=$1
-  cap $environment remote:shell
+  bundle exec cap $environment remote:shell
 }
 alias resh=remote_shell
 
@@ -26,7 +26,7 @@ alias rsbx='remote_shell sandbox'
 
 function remote_console {
   environment=$1
-  cap $environment remote:console
+  bundle exec cap $environment remote:console
 }
 alias rc=remote_console
 
