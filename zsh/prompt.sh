@@ -2,7 +2,7 @@
 
 function set_git_prompt {
   if [ -e '.git' ]; then
-    branchname=`git rev-parse --abbrev-ref HEAD`
+    branchname=`git rev-parse --abbrev-ref HEAD 2> /dev/null`
     git_status=`git status --porcelain | awk '{print $1}'`
 
     git_added=`echo $git_status | grep A`
