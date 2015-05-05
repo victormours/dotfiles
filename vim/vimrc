@@ -171,3 +171,5 @@ set laststatus=2
 if has("autocmd")
   filetype indent plugin on
 endif
+
+nnoremap ; :
