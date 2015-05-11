@@ -78,6 +78,7 @@ Bundle 'Shougo/neocomplete.vim'
 Bundle 'tommcdo/vim-exchange.git'
 Bundle 'ntpeters/vim-better-whitespace'
 Bundle 'tpope/vim-surround'
+Bundle 'jiangmiao/auto-pairs'
 
 " Git
 Bundle 'tpope/vim-fugitive'
