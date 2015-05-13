@@ -36,8 +36,8 @@ alias sp='git stash pop'
 alias uns='git reset HEAD'
 alias unc='git reset --soft HEAD\^'
 
-alias gl='git log --graph --date=short'
-alias gls='git log --graph --date=short | head'
+alias gl='git log --graph --date=short --pretty=oneline --abbrev-commit'
+alias gls='git log --graph --date=short --pretty=oneline --abbrev-commit -n10'
 
 alias gri='git rebase -i'
 alias grc='git rebase --continue'
