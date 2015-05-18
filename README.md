@@ -9,6 +9,7 @@ Installing
 git clone git://github.com/victormours/dotfiles.git ~/.dotfiles
 ~/.dotfiles/install.sh
 ```
+- Modify the gitconfig so that you don't use my name ;)
 - Install iTerm2
 - Install Solarized for iTerm2
 - Recommended: remap Capslock to Escape with [Seil](https://pqrs.org/osx/karabiner/seil.html.en)
