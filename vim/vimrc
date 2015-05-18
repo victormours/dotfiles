@@ -174,3 +174,5 @@ if has("autocmd")
 endif
 
 nnoremap ; :
+
+autocmd FocusLost * silent! wa " Automatically save file
