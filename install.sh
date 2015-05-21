@@ -1,7 +1,5 @@
 set -e
 
-# Change shell to zsh
-chsh -s $(which zsh)
 
 #Symlink .zshrc and .vimrc
 ln -s $HOME/.dotfiles/vim/vimrc $HOME/.vimrc
@@ -13,7 +11,12 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 vim +BundleInstall +q
 
-# Brew specific installs
+brew install fish
+cp /usr/local/bin/fish /etc/shells
+
+# Change shell to fish
+chsh -s $(which fish)
+
 brew install the_silver_searcher
 brew install rbenv-bundler
 brew install autojump
