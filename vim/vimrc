@@ -176,3 +176,5 @@ endif
 nnoremap ; :
 
 autocmd FocusLost * silent! wa " Automatically save file
+
+set scrolloff=5 " Keep 5 lines below and above the cursor
