@@ -25,4 +25,5 @@ export PATH="$HOME/Library/Haskell/bin:$PATH"
 
 export EDITOR=vim
 
+setopt AUTO_CD
 j # Jump to most commonly used directory
