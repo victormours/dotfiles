@@ -21,3 +21,4 @@ brew install autojump
 rbenv bundler on
 
 gem install hub
+gem install rubocop-git
