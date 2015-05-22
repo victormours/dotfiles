@@ -95,10 +95,9 @@ Bundle "tomtom/tcomment_vim.git"
 Bundle 'mattn/emmet-vim'
 
 " Javascript
-Bundle "pangloss/vim-javascript"
+Bundle "othree/yajs.vim"
+Bundle "othree/javascript-libraries-syntax.vim"
 Bundle 'claco/jasmine.vim'
-Bundle 'burnettk/vim-angular'
-Bundle "kchmck/vim-coffee-script"
 
 " Ruby
 Bundle 'Keithbsmiley/rspec.vim'
