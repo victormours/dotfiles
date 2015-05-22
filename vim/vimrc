@@ -79,6 +79,7 @@ Bundle 'tommcdo/vim-exchange.git'
 Bundle 'ntpeters/vim-better-whitespace'
 Bundle 'tpope/vim-surround'
 Bundle 'jiangmiao/auto-pairs'
+Bundle 'scrooloose/syntastic'
 
 " Git
 Bundle 'tpope/vim-fugitive'
@@ -140,6 +141,7 @@ source ~/.dotfiles/vim/plugins/spec-outline.vim
 source ~/.dotfiles/vim/plugins/vim-rspec.vim
 source ~/.dotfiles/vim/plugins/vim-textobj-rubyblock.vim
 source ~/.dotfiles/vim/plugins/vim-better-whitespace.vim
+source ~/.dotfiles/vim/plugins/syntastic.vim
 
 " Better search
 set hlsearch
