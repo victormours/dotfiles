@@ -1,7 +1,7 @@
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 let NERDTreeQuitOnOpen = 1
-let g:NERDTreeWinSize = 30
+let NERDTreeAutoDeleteBuffer = 1
 
 " Open a NerdTree if no file is given as CLI argument
 autocmd StdinReadPre * let s:std_in=1
