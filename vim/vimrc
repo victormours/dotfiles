@@ -80,6 +80,7 @@ Bundle 'ntpeters/vim-better-whitespace'
 Bundle 'tpope/vim-surround'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'scrooloose/syntastic'
+Bundle 'vim-scripts/CursorLineCurrentWindow'
 
 " Git
 Bundle 'tpope/vim-fugitive'
@@ -179,3 +180,5 @@ nnoremap ; :
 autocmd FocusLost * silent! wa " Automatically save file
 
 set scrolloff=5 " Keep 5 lines below and above the cursor
+
+set cursorline
