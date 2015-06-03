@@ -22,3 +22,5 @@ rbenv bundler on
 
 gem install hub
 gem install rubocop-git
+
+git clone git://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.dotfiles/zsh-syntax-highlighting

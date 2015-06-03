@@ -10,6 +10,8 @@ source $HOME/.dotfiles/zsh/visible_commands.sh
 source $HOME/.dotfiles/zsh/mandatory_aliases.sh
 source $HOME/.dotfiles/zsh/explicit_aliases.sh
 
+source $HOME/.dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
 
