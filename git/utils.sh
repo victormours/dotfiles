@@ -4,3 +4,11 @@ function git_clean_branches {
 
 alias gcl=git_clean_branches
 
+function g {
+  if [ $# -eq 0 ]; then
+    git $*
+  else
+    git add --all :/
+    git commit -m "$*"
+  fi
+}

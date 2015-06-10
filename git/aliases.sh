@@ -1,5 +1,4 @@
 # Git essentials
-alias g=git
 alias d='git diff'
 alias s='git status'
 alias c='git checkout'
@@ -17,7 +16,6 @@ alias l='git pull --rebase'
 
 alias gsh='git show'
 
-alias gc='git add --all :/; git commit -m'
 alias a='git add'
 alias aa='git add --all :/'
 alias ap='git add --patch'
