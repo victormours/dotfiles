@@ -145,6 +145,7 @@ source ~/.dotfiles/vim/plugins/vim-rspec.vim
 source ~/.dotfiles/vim/plugins/vim-textobj-rubyblock.vim
 source ~/.dotfiles/vim/plugins/vim-better-whitespace.vim
 source ~/.dotfiles/vim/plugins/syntastic.vim
+source ~/.dotfiles/vim/plugins/vim-fugitive.vim
 
 " Better search
 set hlsearch
