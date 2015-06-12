@@ -89,7 +89,6 @@ Bundle 'tpope/vim-fugitive'
 
 " Visuals
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'bling/vim-airline'
 
 " Commenting
 Bundle "tomtom/tlib_vim.git"
@@ -185,3 +184,6 @@ autocmd FocusLost * silent! wa " Automatically save file
 set scrolloff=5 " Keep 5 lines below and above the cursor
 
 set cursorline
+
+set laststatus=2
+set statusline=%f "tail of the filename
