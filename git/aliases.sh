@@ -16,7 +16,7 @@ alias l='git pull --rebase'
 
 alias gsh='git show'
 
-alias a='git add'
+alias ga='git add'
 alias aa='git add --all :/'
 alias ap='git add --patch'
 alias com='git commit -m'
