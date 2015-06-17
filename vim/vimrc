@@ -121,7 +121,7 @@ syntax enable
 
 " Solarized theme
 let g:solarized_termtrans = 1
-set background=dark
+set background=light
 colorscheme solarized
 
 if has("gui_running")
