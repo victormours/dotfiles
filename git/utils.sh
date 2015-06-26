@@ -12,3 +12,8 @@ function g {
     git commit -m "$*"
   fi
 }
+
+function git-mustache {
+  git commit -m ":man: $*"
+}
+
