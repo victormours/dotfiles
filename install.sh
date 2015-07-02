@@ -24,3 +24,7 @@ gem install hub
 gem install rubocop-git
 
 git clone git://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.dotfiles/zsh-syntax-highlighting
+
+echo "# Add machine-specific config here (this file and the local directory will be ignored by git)" > $HOME/.dotfiles/local/zshrc
+
+echo "Done installing! You can customize your local zsh config by editing ~/.dotfiles/local/zshrc"

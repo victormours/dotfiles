@@ -27,3 +27,7 @@ export EDITOR=vim
 
 setopt AUTO_CD
 j # Jump to most commonly used directory
+
+if [ -f $HOME/.dotfiles/local/zshrc ]; then
+  source $HOME/.dotfiles/local/zshrc
+fi

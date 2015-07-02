@@ -54,3 +54,7 @@ Super fast aliases (see `git/aliases`)
 - `prs` to see all the pull requests in the current repo
 
 
+Customizing
+===
+- If you want to add a machine-specific zsh config, you can do so by adding a zshrc file in the `local/` directory. `local/zshrc` will be loaded after `zsh/zshrc`.
+
