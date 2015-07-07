@@ -187,6 +187,6 @@ set cursorline
 
 set laststatus=2
 set statusline=%f "tail of the filename
-set statusline+=c:%c,
+set statusline+=\ c:%c
 
 nnoremap <Leader>a :w<Enter>:!osascript -e 'tell application "Iterm" to activate'<Enter>
