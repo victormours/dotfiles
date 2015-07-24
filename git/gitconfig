@@ -5,9 +5,7 @@
   local = green
   remote = blue
 [push]
-  # 'git push' will push the current branch to its tracking branch
-  # the usual default is to push all branches
-  default = tracking
+  default = current
 [user]
   name = Victor Mours
   email = victor.mours@tigerlilyapps.com
