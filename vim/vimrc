@@ -190,3 +190,4 @@ set statusline=%f "tail of the filename
 set statusline+=\ c:%c
 
 nnoremap <Leader>a :w<Enter>:!osascript -e 'tell application "Iterm" to activate'<Enter>
+autocmd BufWritePre *.json %!python -m json.tool
