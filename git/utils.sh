@@ -6,7 +6,7 @@ alias gcl=git_clean_branches
 
 function g {
   git add --all :/
-  git commit -m "$*"
+  git commit -m $*
 }
 
 function git-mustache {
