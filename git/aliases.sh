@@ -21,7 +21,7 @@ alias ga='git add'
 alias aa='git add --all :/'
 alias ap='git add --patch'
 alias com='git commit -m'
-alias gca='git add --all :/; git commit --amend'
+alias ca='git add --all :/; git commit --amend --no-edit'
 
 alias p='git push'
 alias pf='git push --force'
