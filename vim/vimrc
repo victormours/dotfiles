@@ -194,3 +194,26 @@ autocmd BufWritePre *.json %!python -m json.tool
 
 autocmd VimResized * wincmd = " Automatically resize splits when resizing window
 
+" relativenumber line number
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set norelativenumber
+    set number
+  else
+    set relativenumber
+  endif
+endfunc
+
+nnoremap <C-b> :call NumberToggle()<CR>
+
+"lazy js. Append ; at the end of the line
+nnoremap <Leader>; m`A;<Esc>``
+
+" Relativenumber line disable
+function! DisableRelativeLineNumber()
+  if(&relativenumber == 1)
+    set norelativenumber
+    set number
+  endif
+endfunc
+
