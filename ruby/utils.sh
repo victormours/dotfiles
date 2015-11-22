@@ -30,3 +30,16 @@ function remote_console {
 }
 alias rc=remote_console
 
+
+function new_gem {
+  gem_name=$1
+  mkdir $gem_name
+  echo 2.2.2 > $gem_name/.ruby-version
+
+  echo 'source "https://rubygems.org"' > $gem_name/Gemfile
+  echo gemspec >> $gem_name/Gemfile
+
+  echo 'Gem::Specification.new do |gem|' > $gem_name/$gem_name.gemspec
+  echo "  gem.name = '$gem_name'" >>  $gem_name/$gem_name.gemspec
+  echo end >>  $gem_name/$gem_name.gemspec
+}
