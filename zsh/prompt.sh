@@ -1,7 +1,7 @@
 # Heavily inspired form skwp's prompt
 
 function set_git_prompt {
-  if [ -e '.git' ]; then
+  if [ -e '.git' -o -e '../.git' ]; then
     branchname=`git rev-parse --abbrev-ref HEAD 2> /dev/null`
     git_status=`git status --porcelain | awk '{print $1}'`
 
