@@ -34,6 +34,10 @@ alias rc=remote_console
 function new_gem {
   gem_name=$1
   mkdir $gem_name
+
+  mkdir $gem_name/lib
+  mkdir $gem_name/bin
+
   echo 2.2.2 > $gem_name/.ruby-version
 
   echo 'source "https://rubygems.org"' > $gem_name/Gemfile
@@ -41,5 +45,6 @@ function new_gem {
 
   echo 'Gem::Specification.new do |gem|' > $gem_name/$gem_name.gemspec
   echo "  gem.name = '$gem_name'" >>  $gem_name/$gem_name.gemspec
+  echo "  gem.version = '0.0.0'" >>  $gem_name/$gem_name.gemspec
   echo end >>  $gem_name/$gem_name.gemspec
 }
