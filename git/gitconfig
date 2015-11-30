@@ -8,7 +8,7 @@
   default = current
 [user]
   name = Victor Mours
-  email = victor.mours@tigerlilyapps.com
+  email = victor@ahaoho.io
 
 [color "diff"]
   meta = yellow bold
