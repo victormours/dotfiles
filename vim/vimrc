@@ -75,6 +75,7 @@ Plugin 'gmarik/Vundle.vim'
 " Cool plugins
 Bundle 'scrooloose/nerdtree'
 Bundle 'Xuyuanp/nerdtree-git-plugin'
+Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'ctrlpvim/ctrlp.vim'
 Bundle 'Shougo/neocomplete.vim'
 Bundle 'tommcdo/vim-exchange.git'
