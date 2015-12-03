@@ -11,4 +11,4 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 nmap <Leader>f :NERDTreeTabsToggle<Enter>
-nnoremap <silent> <Leader>v :NERDTreeTabsFind<CR>
+nnoremap <silent> <Leader>v :NERDTreeTabsOpen<CR>::NERDTreeFocusToggle<CR>:NERDTreeTabsFind<CR>
