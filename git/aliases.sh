@@ -43,6 +43,7 @@ alias rim='git rebase -i master'
 alias rid='git rebase -i development'
 
 alias gclone='git clone'
+alias ginit='git init'
 
 alias gdd='git diff development'
 

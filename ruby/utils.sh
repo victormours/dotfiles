@@ -37,6 +37,7 @@ function new_gem {
 
   mkdir $gem_name/lib
   mkdir $gem_name/bin
+  mkdir $gem_name/spec
 
   echo 2.2.2 > $gem_name/.ruby-version
 
@@ -47,4 +48,10 @@ function new_gem {
   echo "  gem.name = '$gem_name'" >>  $gem_name/$gem_name.gemspec
   echo "  gem.version = '0.0.0'" >>  $gem_name/$gem_name.gemspec
   echo end >>  $gem_name/$gem_name.gemspec
+}
+
+function new_ruby_bin {
+  filename=$1
+  echo "#!/usr/bin/env ruby" > $filename
+  chmod u+x $filename
 }
