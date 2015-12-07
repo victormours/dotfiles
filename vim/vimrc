@@ -61,9 +61,6 @@ set expandtab
 nnoremap p p=`]<C-o>
 nnoremap P P=`]<C-o>
 
-set nowrap       "Don't wrap lines
-set linebreak    "Wrap lines at convenient points
-
 filetype off
 " Install Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -166,9 +163,14 @@ endif
 " grep word under cursor
 nnoremap <Leader>g :grep! "\b<C-R><C-W>\b"<CR>:cw<CR><CR>
 
+set nowrap       "Don't wrap lines
+set linebreak    "Wrap lines at convenient points
+
 " Move normally between wrapped lines
 nmap j gj
 nmap k gk
+
+autocmd BufReadPre,FileReadPre *.md :set wrap
 
 " always show status line
 set laststatus=2
@@ -212,4 +214,5 @@ nnoremap <Leader>; m`A;<Esc>``
 
 nnoremap H ^
 nnoremap L $
+
 
