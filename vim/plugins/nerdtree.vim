@@ -12,3 +12,5 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 
 nmap <Leader>f :NERDTreeTabsToggle<Enter>
 nnoremap <silent> <Leader>v :NERDTreeTabsOpen<CR>::NERDTreeFocusToggle<CR>:NERDTreeTabsFind<CR>
+
+autocmd BufReadPre,FileReadPre * :NERDTreeTabsClose
