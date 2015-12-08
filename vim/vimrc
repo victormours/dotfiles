@@ -215,4 +215,7 @@ nnoremap <Leader>; m`A;<Esc>``
 nnoremap H ^
 nnoremap L $
 
+if has("gui_running")
+  set fullscreen
+end
 
