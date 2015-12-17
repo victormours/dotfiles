@@ -7,4 +7,4 @@ alias wh=which
 
 alias psg='ps aux | grep'
 
-alias mail='open https://mail.google.com'
+alias helo='heroku local'
