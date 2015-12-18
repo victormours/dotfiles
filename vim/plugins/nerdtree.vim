@@ -10,7 +10,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " Close if the only remaining window is a nerdtree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-nmap <Leader>f :NERDTreeTabsToggle<Enter>
-nnoremap <silent> <Leader>v :NERDTreeTabsOpen<CR>:NERDTreeFocusToggle<CR>:NERDTreeTabsFind<CR>
+nmap <Leader>f :NERDTreeToggle<Enter>
+nnoremap <silent> <Leader>v :NERDTreeFind<CR>
 
-autocmd BufReadPre,FileReadPre * :NERDTreeTabsClose
+autocmd BufReadPre,FileReadPre * :NERDTreeClose
