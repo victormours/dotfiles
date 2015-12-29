@@ -7,4 +7,4 @@ alias wh=which
 
 alias psg='ps aux | grep'
 
-alias helo='heroku local'
+alias hl='heroku local'
