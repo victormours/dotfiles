@@ -14,4 +14,6 @@ autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 
 " Map standard Ctrl-N completion to Cmd-Space
 inoremap <D-Space> <C-n>
+" Map standard Ctrl-N completion to Ctrl-Space
+inoremap <C-Space> <C-n>
 
