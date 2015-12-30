@@ -1,6 +1,8 @@
 " Command-/ to toggle comments
 map <D-/> :TComment<CR>
+imap <D-/> <Esc>:TComment<CR>i
+
 " Control-/ to toggle comments
 map <C-/> :TComment<CR>
-imap <D-/> <Esc>:TComment<CR>i
+imap <C-/> <Esc>:TComment<CR>i
 
