@@ -3,6 +3,7 @@ alias bu='bundle update'
 alias be='bundle exec'
 
 alias rs='bundle exec rspec'
+alias rss='bundle exec spring rspec'
 alias rp='bundle exec rspec-preloader'
 alias rps='bundle exec rspec-preloader-server'
 alias rpc='bundle exec rspec-preloader-client'
