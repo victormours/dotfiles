@@ -29,8 +29,8 @@ syntax on
 let mapleader = "\<Space>"
 nmap <Leader>rxm :ExtractMethod<Enter>
 
-" Copy the absolute path of the current file to the clipboard
-nmap <Leader>cf :silent !echo -n %:p \| pbcopy<Enter>
+" Copy the relative path of the current file to the clipboard
+nmap <Leader>cf :silent !echo -n % \| pbcopy<Enter>
 
 " ================ Turn Off Swap Files ==============
 
