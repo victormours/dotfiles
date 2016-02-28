@@ -31,3 +31,5 @@ j # Jump to most commonly used directory
 if [ -f $HOME/.dotfiles/local/zshrc ]; then
   source $HOME/.dotfiles/local/zshrc
 fi
+
+eval $(docker-machine env default)
