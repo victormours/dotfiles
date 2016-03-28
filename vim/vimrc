@@ -111,6 +111,9 @@ Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'kana/vim-textobj-user'
 Bundle 'jgdavey/vim-blockle'
 
+" Elixir
+Bundle 'elixir-lang/vim-elixir'
+
 
 call vundle#end()            " required
 filetype plugin indent on    " required
