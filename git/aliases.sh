@@ -20,6 +20,7 @@ alias gsh='git show'
 alias ga='git add'
 alias aa='git add --all :/'
 alias ap='git add --patch'
+alias co='git commit'
 alias com='git commit -m'
 alias ca='git add --all :/; git commit --amend --no-edit'
 
