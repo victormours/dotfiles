@@ -12,6 +12,7 @@ source $HOME/.dotfiles/zsh/explicit_aliases.sh
 source $HOME/.dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
+PATH=/usr/local/bin:$PATH
 
 # Autojump
 [[ -s $HOME/.autojump/etc/profile.d/autojump.sh ]] && source $HOME/.autojump/etc/profile.d/autojump.sh
