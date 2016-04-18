@@ -18,6 +18,7 @@ vim +BundleInstall +q
 brew install the_silver_searcher
 brew install rbenv-bundler
 brew install autojump
+brew install git
 
 rbenv bundler on
 
