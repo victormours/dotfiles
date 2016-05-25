@@ -11,3 +11,8 @@ alias ls='ls -Gh'
 alias "review"="open 'https://github.com/pulls?q=is%3Aopen+is%3Apr+label%3A%22Needs+Review%22+user%3Atigerlily+sort%3Acreated-asc'"
 
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+
+function jira {
+  TICKET_ID=$1
+  open https://jobteaser.atlassian.net/browse/JT-$TICKET_ID
+}
