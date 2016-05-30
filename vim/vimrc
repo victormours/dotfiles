@@ -101,6 +101,7 @@ Bundle 'slim-template/vim-slim'
 Bundle "othree/yajs.vim"
 Bundle "othree/javascript-libraries-syntax.vim"
 Bundle 'claco/jasmine.vim'
+Bundle 'kchmck/vim-coffee-script'
 
 " Ruby
 Bundle 'Keithbsmiley/rspec.vim'
