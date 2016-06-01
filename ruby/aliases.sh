@@ -17,5 +17,5 @@ alias bec='bundle exec cucumber'
 alias cop='rubocop-git'
 
 # deploying
-alias csd='bundle exec cap sandbox deploy'
+alias csd='bundle exec cap staging deploy'
 alias -g deploy_this='deploy -S branch=`git rev-parse --abbrev-ref HEAD`'
