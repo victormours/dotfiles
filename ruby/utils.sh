@@ -30,6 +30,11 @@ function remote_console {
 }
 alias rc=remote_console
 
+function specs_for {
+  #TODO: cleanup
+  bundle exec rspec `find spec/ -path spec/factories -prune -o -name '*$1*'`
+}
+
 
 function new_gem {
   gem_name=$1
