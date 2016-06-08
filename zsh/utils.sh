@@ -14,6 +14,11 @@ alias "review"="open 'https://github.com/pulls?q=is%3Aopen+is%3Apr+label%3A%22Ne
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 function jira {
-  TICKET_ID=$1
-  open https://jobteaser.atlassian.net/browse/JT-$TICKET_ID
+  if [ $# -eq 0 ]
+    then
+      open https://jobteaser.atlassian.net/browse/JT-`gcb | grep -oE '\d{4}'`
+    else
+      TICKET_ID=$1
+      open https://jobteaser.atlassian.net/browse/JT-$TICKET_ID
+    fi
 }
