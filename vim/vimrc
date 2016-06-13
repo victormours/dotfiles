@@ -114,6 +114,7 @@ Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'kana/vim-textobj-user'
 Bundle 'jgdavey/vim-blockle'
 Bundle 'KurtPreston/vim-autoformat-rails'
+Bundle 'ngmy/vim-rubocop'
 
 " Elixir
 Bundle 'elixir-lang/vim-elixir'
