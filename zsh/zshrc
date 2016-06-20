@@ -34,3 +34,6 @@ if [ -f $HOME/.dotfiles/local/zshrc ]; then
 fi
 
 eval $(docker-machine env default)
+
+source $HOME/.dotfiles/zsh-autosuggestions/zsh-autosuggestions.zsh
+bindkey '^ ' autosuggest-accept
