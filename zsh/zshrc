@@ -38,3 +38,4 @@ eval $(docker-machine env default)
 source $HOME/.dotfiles/zsh-autosuggestions/zsh-autosuggestions.zsh
 bindkey '^ ' autosuggest-accept
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
+ZSH_AUTOSUGGEST_CLEAR_WIDGETS+='check-alias-and-accept'
