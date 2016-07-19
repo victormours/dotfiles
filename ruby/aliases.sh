@@ -3,6 +3,7 @@ alias bu='bundle update'
 alias be='bundle exec'
 
 alias ras='bundle exec spring rails server'
+alias rac='bundle exec spring rails server'
 
 alias zr='zeus rspec'
 alias zc='zeus console'
