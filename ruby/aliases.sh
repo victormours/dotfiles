@@ -2,7 +2,7 @@ alias bi='bundle install'
 alias bu='bundle update'
 alias be='bundle exec'
 
-alias ras='bundle exec rails server'
+alias ras='bundle exec spring rails server'
 
 alias zr='zeus rspec'
 alias zc='zeus console'
