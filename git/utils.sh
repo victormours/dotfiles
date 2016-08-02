@@ -17,3 +17,7 @@ function git-mustache {
   git commit -m ":man: $*"
 }
 
+function git_fix_conflicts {
+  git diff --name-only | uniq | xargs $EDITOR
+}
+alias gfc=git_fix_conflicts
