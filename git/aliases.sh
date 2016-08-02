@@ -72,4 +72,6 @@ alias gcln='git clean'
 alias gclndf='git clean -df'
 alias gclndfx='git clean -dfx'
 alias gcp='git cherry-pick'
+alias gcpc='git cherry-pick --continue'
+alias gcpa='git cherry-pick --abort'
 

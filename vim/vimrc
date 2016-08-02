@@ -115,6 +115,7 @@ Bundle 'kana/vim-textobj-user'
 Bundle 'jgdavey/vim-blockle'
 Bundle 'KurtPreston/vim-autoformat-rails'
 Bundle 'ngmy/vim-rubocop'
+Bundle 'skwp/greplace.vim'
 
 " Elixir
 Bundle 'elixir-lang/vim-elixir'
@@ -151,6 +152,7 @@ source ~/.dotfiles/vim/plugins/vim-textobj-rubyblock.vim
 source ~/.dotfiles/vim/plugins/vim-better-whitespace.vim
 source ~/.dotfiles/vim/plugins/syntastic.vim
 source ~/.dotfiles/vim/plugins/vim-fugitive.vim
+source ~/.dotfiles/vim/plugins/greplace.vim
 
 " Better search
 set hlsearch
