@@ -5,10 +5,14 @@
   local = green
   remote = blue
 [push]
-  default = current
+  default = simple
+
+[branch]
+  autosetupmerge = always
+
 [user]
   name = Victor Mours
-  email = victor@ahaoho.io
+  email = victor.mours@gmail.com
 
 [color "diff"]
   meta = yellow bold
