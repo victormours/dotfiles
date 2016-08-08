@@ -1,9 +1,6 @@
-[color]
-  ui = true
-[color "branch"]
-  current = green reverse
-  local = green
-  remote = blue
+[core]
+  editor = vim
+
 [push]
   default = simple
 
@@ -13,6 +10,14 @@
 [user]
   name = Victor Mours
   email = victor.mours@gmail.com
+
+[color]
+  ui = true
+
+[color "branch"]
+  current = green reverse
+  local = green
+  remote = blue
 
 [color "diff"]
   meta = yellow bold
