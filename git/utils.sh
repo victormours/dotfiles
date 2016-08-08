@@ -21,3 +21,9 @@ function git_fix_conflicts {
   git diff --name-only | uniq | xargs $EDITOR
 }
 alias gfc=git_fix_conflicts
+
+function nb {
+  NEW_BRANCH_NAME=$1
+  git checkout -b $NEW_BRANCH_NAME
+  git branch --set-upstream-to origin/$NEW_BRANCH_NAME
+}

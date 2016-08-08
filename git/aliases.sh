@@ -4,7 +4,6 @@ alias s='git status'
 alias c='git checkout'
 
 alias b='git branch -v'
-alias nb='git checkout -b' # new branch
 
 alias cm='git checkout master'
 alias gd='git checkout develop'
