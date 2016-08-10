@@ -102,6 +102,7 @@ Bundle "othree/yajs.vim"
 Bundle "othree/javascript-libraries-syntax.vim"
 Bundle 'claco/jasmine.vim'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'lfilho/cosco.vim'
 
 " Ruby
 Bundle 'Keithbsmiley/rspec.vim'
@@ -153,6 +154,7 @@ source ~/.dotfiles/vim/plugins/vim-better-whitespace.vim
 source ~/.dotfiles/vim/plugins/syntastic.vim
 source ~/.dotfiles/vim/plugins/vim-fugitive.vim
 source ~/.dotfiles/vim/plugins/greplace.vim
+source ~/.dotfiles/vim/plugins/cosco.vim
 
 " Better search
 set hlsearch
