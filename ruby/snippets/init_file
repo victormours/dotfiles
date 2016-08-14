@@ -1,0 +1,36 @@
+#!/usr/bin/env ruby
+
+def remove_non_module_directories(string)
+  string.gsub(/^spec\//, '')
+    .gsub(/^lib\//, '')
+    .gsub(/^app\//, '')
+    .gsub(/^controllers\//, '')
+    .gsub(/^views\//, '')
+    .gsub(/^models\//, '')
+end
+
+def camelize(string)
+  string.split(".").first.split("/").map do |substring|
+    substring.split("_").map do |subsubstring|
+      subsubstring.capitalize
+    end.join
+  end.join("::")
+end
+
+def classify(string)
+  camelize(remove_non_module_directories(string))
+end
+
+filename = ARGV[0]
+if filename[/_spec.rb$/]
+  code_filename =  filename.gsub("_spec.rb", ".rb")
+  puts 'require "spec_helper"'
+  puts ''
+  puts "describe #{classify(code_filename)} do"
+  puts "end"
+else
+  puts "class #{classify(filename)}"
+  puts "end"
+end
+
+
