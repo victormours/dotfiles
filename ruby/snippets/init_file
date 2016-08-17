@@ -21,16 +21,28 @@ def classify(string)
   camelize(remove_non_module_directories(string))
 end
 
-filename = ARGV[0]
-if filename[/_spec.rb$/]
-  code_filename =  filename.gsub("_spec.rb", ".rb")
+filepath = ARGV[0]
+if filepath[/_spec\.rb$/]
+  code_filepath =  filepath.gsub("_spec.rb", ".rb")
   puts 'require "spec_helper"'
   puts ''
-  puts "describe #{classify(code_filename)} do"
+  puts "describe #{classify(code_filepath)} do"
   puts "end"
-else
-  puts "class #{classify(filename)}"
+elsif filepath[/\.rb$/]
+  puts "class #{classify(filepath)}"
   puts "end"
+elsif filepath[/\.js$/]
+
+  filename = filepath.split("/").last
+  puts '(function(win) {'
+
+  puts "  var #{camelize(filename)}= Vue.extend({"
+  puts '  });'
+  puts "  Vue.component('#{filename.gsub("_", "-")}', #{camelize(filename)});"
+
+  puts '})(window);'
+
+
 end
 
 
