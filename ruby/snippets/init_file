@@ -37,6 +37,7 @@ elsif filepath[/\.js$/]
   puts '(function(win) {'
 
   puts "  var #{camelize(filename)}= Vue.extend({"
+  puts "    template: ''"
   puts '  });'
   puts "  Vue.component('#{filename.gsub("_", "-")}', #{camelize(filename)});"
 
