@@ -26,7 +26,7 @@ if filepath[/_spec\.rb$/]
   code_filepath =  filepath.gsub("_spec.rb", ".rb")
   puts 'require "spec_helper"'
   puts ''
-  puts "describe #{classify(code_filepath)} do"
+  puts "RSpec.describe #{classify(code_filepath)} do"
   puts "end"
 elsif filepath[/\.rb$/]
   puts "class #{classify(filepath)}"
