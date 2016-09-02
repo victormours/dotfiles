@@ -78,7 +78,7 @@ Bundle 'tommcdo/vim-exchange.git'
 Bundle 'ntpeters/vim-better-whitespace'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-dispatch'
+Bundle 'scizo/vim-dispatch'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'scrooloose/syntastic'
 Bundle 'vim-scripts/CursorLineCurrentWindow'
@@ -186,9 +186,6 @@ nmap k gk
 
 autocmd BufReadPre,FileReadPre *.md :set wrap
 
-" always show status line
-set laststatus=2
-
 " Enable filetype plugins for vim-textobj-rubyblock
 if has("autocmd")
   filetype indent plugin on
@@ -209,18 +206,6 @@ set statusline+=\ c:%c
 nnoremap <Leader>a :w<Enter>:!osascript -e 'tell application "Iterm" to activate' -e 'tell application "System Events" to keystroke (ASCII character 30) ' -e 'tell application "System Events" to keystroke return'<Enter>
 
 autocmd VimResized * wincmd = " Automatically resize splits when resizing window
-
-" relativenumber line number
-function! NumberToggle()
-  if(&relativenumber == 1)
-    set norelativenumber
-    set number
-  else
-    set relativenumber
-  endif
-endfunc
-
-nnoremap <C-b> :call NumberToggle()<CR>
 
 "lazy js. Append ; at the end of the line
 nnoremap <Leader>; m`A;<Esc>``
