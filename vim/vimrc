@@ -61,71 +61,64 @@ set expandtab
 nnoremap p p=`]<C-o>
 nnoremap P P=`]<C-o>
 
-filetype off
-" Install Vundle
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+call plug#begin('~/.vim/plugged')
 
 " Cool plugins
-Bundle 'scrooloose/nerdtree'
-Bundle 'Xuyuanp/nerdtree-git-plugin'
-Bundle 'ctrlpvim/ctrlp.vim'
-Bundle 'Shougo/neocomplete.vim'
-Bundle 'tommcdo/vim-exchange.git'
-Bundle 'ntpeters/vim-better-whitespace'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-dispatch'
-Bundle 'jiangmiao/auto-pairs'
-Bundle 'scrooloose/syntastic'
-Bundle 'vim-scripts/CursorLineCurrentWindow'
-Bundle 'victormours/better-writing.vim'
-Bundle 'janko-m/vim-test'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'Shougo/neocomplete.vim'
+Plug 'tommcdo/vim-exchange'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-dispatch'
+Plug 'jiangmiao/auto-pairs'
+Plug 'scrooloose/syntastic'
+Plug 'vim-scripts/CursorLineCurrentWindow'
+Plug 'victormours/better-writing.vim'
+Plug 'janko-m/vim-test'
 
 " Git
-Bundle 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 
 " Visuals
-Bundle 'altercation/vim-colors-solarized'
+Plug 'altercation/vim-colors-solarized'
 
 " Commenting
-Bundle "tomtom/tlib_vim.git"
-Bundle "tomtom/tcomment_vim.git"
+Plug "tomtom/tlib_vim.git"
+Plug "tomtom/tcomment_vim.git"
 
 " HTML
-Bundle 'mattn/emmet-vim'
-Bundle 'slim-template/vim-slim'
+Plug 'mattn/emmet-vim'
+Plug 'slim-template/vim-slim'
 
 " Javascript
-Bundle "othree/yajs.vim"
-Bundle "othree/javascript-libraries-syntax.vim"
-Bundle 'claco/jasmine.vim'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'lfilho/cosco.vim'
+Plug "othree/yajs.vim"
+Plug "othree/javascript-libraries-syntax.vim"
+Plug 'claco/jasmine.vim'
+Plug 'kchmck/vim-coffee-script'
+Plug 'lfilho/cosco.vim'
 
 " Ruby
-Bundle 'Keithbsmiley/rspec.vim'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-endwise'
-Bundle 'ecomba/vim-ruby-refactoring'
-Bundle 'emilsoman/spec-outline.vim'
-Bundle 'victormours/vim-rspec'
-Bundle 'nelstrom/vim-textobj-rubyblock'
-Bundle 'kana/vim-textobj-user'
-Bundle 'jgdavey/vim-blockle'
-Bundle 'KurtPreston/vim-autoformat-rails'
-Bundle 'ngmy/vim-rubocop'
-Bundle 'skwp/greplace.vim'
+Plug 'Keithbsmiley/rspec.vim'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-endwise'
+Plug 'ecomba/vim-ruby-refactoring'
+Plug 'emilsoman/spec-outline.vim'
+Plug 'victormours/vim-rspec'
+Plug 'nelstrom/vim-textobj-rubyblock'
+Plug 'kana/vim-textobj-user'
+Plug 'jgdavey/vim-blockle'
+Plug 'KurtPreston/vim-autoformat-rails'
+Plug 'ngmy/vim-rubocop'
+Plug 'skwp/greplace.vim'
 
 " Elixir
-Bundle 'elixir-lang/vim-elixir'
+Plug 'elixir-lang/vim-elixir'
 
 
-call vundle#end()            " required
-filetype plugin indent on    " required
+call plug#end()
 
 syntax enable
 
