@@ -1,12 +1,22 @@
 AllCops:
   DisabledByDefault: true
 
+# Use empty lines between defs.
+Style/EmptyLineBetweenDefs:
+  # If true, this parameter means that single line method definitions don't
+  # need an empty line between them.
+  AllowAdjacentOneLineDefs: false
+
 Style/HashSyntax:
   EnforcedStyle: ruby19
 
 # The rails style implies that "private" and "protected" will have the same level of indentation as methods
 Style/IndentationConsistency:
   EnforcedStyle: rails
+
+Style/RedundantReturn:
+  # When true allows code like `return x, y`.
+  AllowMultipleReturnValues: false
 
 Style/SpaceInsideBlockBraces:
   EnforcedStyle: space
@@ -16,3 +26,4 @@ Style/SpaceInsideHashLiteralBraces:
 
 Style/SpaceInsideStringInterpolation:
   EnforcedStyle: no_space
+
