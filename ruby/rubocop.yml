@@ -1,0 +1,18 @@
+AllCops:
+  DisabledByDefault: true
+
+Style/HashSyntax:
+  EnforcedStyle: ruby19
+
+# The rails style implies that "private" and "protected" will have the same level of indentation as methods
+Style/IndentationConsistency:
+  EnforcedStyle: rails
+
+Style/SpaceInsideBlockBraces:
+  EnforcedStyle: space
+
+Style/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: space
+
+Style/SpaceInsideStringInterpolation:
+  EnforcedStyle: no_space

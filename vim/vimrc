@@ -72,7 +72,7 @@ Plug 'tommcdo/vim-exchange'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-dispatch'
+Plug 'victormours/vim-dispatch'
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/syntastic'
 Plug 'vim-scripts/CursorLineCurrentWindow'
@@ -86,8 +86,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'altercation/vim-colors-solarized'
 
 " Commenting
-Plug 'tomtom/tlib_vim.git'
-Plug 'tomtom/tcomment_vim.git'
+Plug 'tomtom/tlib_vim'
+Plug 'tomtom/tcomment_vim'
 
 " HTML
 Plug 'mattn/emmet-vim'

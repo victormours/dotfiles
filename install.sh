@@ -9,6 +9,7 @@ ln -s $HOME/.dotfiles/zsh/zshrc $HOME/.zshrc
 ln -s $HOME/.dotfiles/git/gitconfig $HOME/.gitconfig
 ln -s $HOME/.dotfiles/gemrc $HOME/.gemrc
 ln -s $HOME/.dotfiles/javascript/jshintrc $HOME/.jshintrc
+ln -s $HOME/.dotfiles/ruby/rubocop.yml $HOME/.rubocop.yml
 
 # Install Plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
