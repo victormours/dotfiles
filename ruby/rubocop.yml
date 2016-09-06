@@ -1,6 +1,21 @@
 AllCops:
   DisabledByDefault: true
 
+# Align the elements of a hash literal if they span more than one line.
+Style/AlignHash:
+  # Alignment of entries using hash rocket as separator. Valid values are:
+  #
+  # key - left alignment of keys
+  #   'a' => 2
+  #   'bb' => 3
+  # separator - alignment of hash rockets, keys are right aligned
+  #    'a' => 2
+  #   'bb' => 3
+  # table - left alignment of keys, hash rockets, and values
+  #   'a'  => 2
+  #   'bb' => 3
+  EnforcedHashRocketStyle: key
+
 # Use empty lines between defs.
 Style/EmptyLineBetweenDefs:
   # If true, this parameter means that single line method definitions don't
@@ -17,6 +32,13 @@ Style/IndentationConsistency:
 Style/RedundantReturn:
   # When true allows code like `return x, y`.
   AllowMultipleReturnValues: false
+
+Style/SpaceAroundOperators:
+  # When true, allows most uses of extra spacing if the intent is to align
+  # with an operator on the previous or next line, not counting empty lines
+  # or comment lines.
+    AllowForAlignment: true
+
 
 Style/SpaceInsideBlockBraces:
   EnforcedStyle: space
