@@ -1,6 +1,9 @@
 AllCops:
   DisabledByDefault: true
 
+Style/AlignArray:
+  Enabled: true
+
 # Align the elements of a hash literal if they span more than one line.
 Style/AlignHash:
   # Alignment of entries using hash rocket as separator. Valid values are:
@@ -8,13 +11,19 @@ Style/AlignHash:
   # key - left alignment of keys
   #   'a' => 2
   #   'bb' => 3
-  # separator - alignment of hash rockets, keys are right aligned
-  #    'a' => 2
-  #   'bb' => 3
-  # table - left alignment of keys, hash rockets, and values
-  #   'a'  => 2
-  #   'bb' => 3
   EnforcedHashRocketStyle: key
+  # ignore_implicit - Ignore only implicit hashes.
+  #   Accepts:
+  #     function(a: 1,
+  #       b: 2)
+  #   Registers an offense for:
+  #     function({a: 1,
+  #       b: 2})
+  EnforcedLastArgumentHashStyle: ignore_implicit
+  # key - left alignment of keys
+  #   a: 0
+  #   bb: 1
+  EnforcedColonStyle: key
 
 # Use empty lines between defs.
 Style/EmptyLineBetweenDefs:
