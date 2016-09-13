@@ -33,8 +33,6 @@ if [ -f $HOME/.dotfiles/local/zshrc ]; then
   source $HOME/.dotfiles/local/zshrc
 fi
 
-eval $(docker-machine env default)
-
 source $HOME/.dotfiles/zsh-autosuggestions/zsh-autosuggestions.zsh
 bindkey '^ ' autosuggest-accept
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
