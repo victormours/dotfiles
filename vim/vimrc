@@ -198,6 +198,8 @@ set statusline+=\ c:%c
 
 nnoremap <Leader>a :w<Enter>:!osascript -e 'tell application "Iterm" to activate' -e 'tell application "System Events" to keystroke (ASCII character 30) ' -e 'tell application "System Events" to keystroke return'<Enter>
 
+command FormatJSON %!python -m json.tool
+
 autocmd VimResized * wincmd = " Automatically resize splits when resizing window
 
 "lazy js. Append ; at the end of the line
