@@ -213,3 +213,26 @@ if has("gui_running")
   set fullscreen
 end
 
+
+fu! CustomFoldText()
+   "get first non-blank line
+   let fs = v:foldstart
+   while getline(fs) =~ '^\s*$' | let fs = nextnonblank(fs + 1)
+   endwhile
+   if fs > v:foldend
+       let line = getline(v:foldstart)
+   else
+       let line = substitute(getline(fs), '\t', repeat(' ', &tabstop), 'g')
+   endif
+
+   let indentation = substitute(line, '\S.*', '', 'g')
+
+   let w = winwidth(0) - &foldcolumn - (&number ? 8 : 0)
+   let foldSize = 1 + v:foldend - v:foldstart
+   let foldSizeStr = " " . foldSize . " lines "
+   let blank = repeat(" ", 200)
+   return indentation . '|' . foldSizeStr . blank
+endf
+
+set foldtext=CustomFoldText()
+nnoremap <Leader>z zi
