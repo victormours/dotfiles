@@ -21,3 +21,5 @@ autocmd BufWritePost Gemfile,*.gemspec Dispatch! bundle install
 autocmd BufWritePost *.rb silent! Dispatch! rubocop % --auto-correct --config $HOME/.dotfiles/ruby/rubocop.yml
 
 autocmd FileType ruby setlocal colorcolumn=100
+
+nmap <Leader>cc :! grep "module\\\|class\\\|private\\\|def " %<Enter>
