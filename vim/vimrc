@@ -78,6 +78,7 @@ Plug 'scrooloose/syntastic'
 Plug 'vim-scripts/CursorLineCurrentWindow'
 Plug 'victormours/better-writing.vim'
 Plug 'janko-m/vim-test'
+Plug 'henrik/vim-indexed-search'
 
 " Git
 Plug 'tpope/vim-fugitive'
