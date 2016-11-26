@@ -158,9 +158,9 @@ source ~/.dotfiles/vim/plugins/cosco.vim
 set hlsearch
 set incsearch
 
-if executable('ag')
-  " Use ag over grep
-  set grepprg=ag\ --nogroup\ --nocolor\ --ignore\ public
+if executable("rg")
+  set grepprg=rg\ --vimgrep\ --no-heading
+  set grepformat=%f:%l:%m
 endif
 
 " grep word under cursor
