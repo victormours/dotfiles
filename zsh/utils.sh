@@ -20,3 +20,9 @@ function jira {
       open https://jobteaser.atlassian.net/browse/JT-$TICKET_ID
     fi
 }
+
+function project_wide_replace {
+  old=$1
+  new=$2
+  rg -l $old | xargs -n1 sed -i '' -e s/$old/$new/g
+}
