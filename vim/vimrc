@@ -67,6 +67,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ctrlpvim/ctrlp.vim'
+
 Plug 'Shougo/neocomplete.vim'
 Plug 'tommcdo/vim-exchange'
 Plug 'ntpeters/vim-better-whitespace'
@@ -78,8 +79,11 @@ Plug 'scrooloose/syntastic'
 Plug 'vim-scripts/CursorLineCurrentWindow'
 Plug 'victormours/better-writing.vim'
 Plug 'janko-m/vim-test'
+
+" Search
 Plug 'henrik/vim-indexed-search'
 Plug 'nixprime/cpsm'
+Plug 'mileszs/ack.vim'
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -161,7 +165,10 @@ set incsearch
 if executable("rg")
   set grepprg=rg\ --vimgrep\ --no-heading
   set grepformat=%f:%l:%m
+  let g:ackprg = 'rg --vimgrep --no-heading'
 endif
+
+nnoremap <Leader>a :Ack!<Space>
 
 " grep word under cursor
 nnoremap <Leader>g :grep! "\b<C-R><C-W>\b"<CR>:cw<CR><CR>
@@ -192,8 +199,6 @@ set laststatus=2
 set statusline=%f "tail of the filename
 set statusline+=\ c:%c
 
-nnoremap <Leader>a :w<Enter>:!osascript -e 'tell application "Iterm" to activate' -e 'tell application "System Events" to keystroke (ASCII character 30) ' -e 'tell application "System Events" to keystroke return'<Enter>
-
 command FormatJSON %!python -m json.tool
 
 autocmd VimResized * wincmd = " Automatically resize splits when resizing window
@@ -208,26 +213,3 @@ if has("gui_running")
   set fullscreen
 end
 
-
-fu! CustomFoldText()
-   "get first non-blank line
-   let fs = v:foldstart
-   while getline(fs) =~ '^\s*$' | let fs = nextnonblank(fs + 1)
-   endwhile
-   if fs > v:foldend
-       let line = getline(v:foldstart)
-   else
-       let line = substitute(getline(fs), '\t', repeat(' ', &tabstop), 'g')
-   endif
-
-   let indentation = substitute(line, '\S.*', '', 'g')
-
-   let w = winwidth(0) - &foldcolumn - (&number ? 8 : 0)
-   let foldSize = 1 + v:foldend - v:foldstart
-   let foldSizeStr = " " . foldSize . " lines "
-   let blank = repeat(" ", 200)
-   return indentation . '|' . foldSizeStr . blank
-endf
-
-set foldtext=CustomFoldText()
-nnoremap <Leader>z zi
