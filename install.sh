@@ -3,6 +3,7 @@ set -e
 # Change shell to zsh
 chsh -s $(which zsh)
 
+echo -n "Symlinking dotfiles..."
 #Symlink .zshrc and .vimrc
 ln -s $HOME/.dotfiles/vim/vimrc $HOME/.vimrc
 ln -s $HOME/.dotfiles/vim/plugin $HOME/.vim/plugin
@@ -11,6 +12,7 @@ ln -s $HOME/.dotfiles/git/gitconfig $HOME/.gitconfig
 ln -s $HOME/.dotfiles/gemrc $HOME/.gemrc
 ln -s $HOME/.dotfiles/javascript/jshintrc $HOME/.jshintrc
 ln -s $HOME/.dotfiles/ruby/rubocop.yml $HOME/.rubocop.yml
+echo 'done!'
 
 # Install Plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
