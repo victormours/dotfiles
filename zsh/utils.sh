@@ -26,3 +26,4 @@ function project_wide_replace {
   new=$2
   rg -l $old | xargs -n1 sed -i '' -e s/$old/$new/g
 }
+alias rep=project_wide_replace
