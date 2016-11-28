@@ -119,7 +119,6 @@ Plug 'kana/vim-textobj-user'
 Plug 'jgdavey/vim-blockle'
 Plug 'KurtPreston/vim-autoformat-rails'
 Plug 'ngmy/vim-rubocop'
-Plug 'skwp/greplace.vim'
 
 " Elixir
 Plug 'elixir-lang/vim-elixir'
@@ -148,11 +147,12 @@ source ~/.dotfiles/vim/ruby.vim
 set hlsearch
 set incsearch
 
-if executable("rg")
-  set grepprg=rg\ --vimgrep\ --no-heading
+
+if executable('rg')
+  set grepprg=rg\ --vimgrep
   set grepformat=%f:%l:%m
-  let g:ackprg = 'rg --vimgrep --no-heading'
 endif
+
 
 nnoremap <Leader>a :Ack!<Space>
 
