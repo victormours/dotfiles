@@ -149,7 +149,7 @@ set incsearch
 
 
 if executable('rg')
-  set grepprg=rg\ --vimgrep
+  set grepprg=rg\ --vimgrep\ --no-heading
   set grepformat=%f:%l:%m
 endif
 
