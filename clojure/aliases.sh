@@ -1,0 +1,1 @@
+alias le=lein
