@@ -1,11 +1,12 @@
 precmd_functions=()
 
-source $HOME/.dotfiles/aliases.sh
 source $HOME/.dotfiles/zsh/utils.sh
 source $HOME/.dotfiles/zsh/aliases.sh
 source $HOME/.dotfiles/zsh/prompt.sh
 source $HOME/.dotfiles/zsh/history.sh
 source $HOME/.dotfiles/zsh/vimify.sh
+
+source $HOME/.dotfiles/aliases.sh
 source $HOME/.dotfiles/zsh/mandatory_aliases.sh
 source $HOME/.dotfiles/zsh/explicit_aliases.sh
 
