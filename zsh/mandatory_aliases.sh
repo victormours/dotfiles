@@ -1,7 +1,8 @@
 function check-alias-and-accept {
   if [ $BUFFER ]; then
 
-    ALIAS=`alias -L | grep -e "=[\'\"]\?${BUFFER}[\'\"]\?$"`
+    ESCAPED_BUFFER=$(printf %s "$BUFFER" | sed 's/[][()\.^$?*+]/\\&/g')
+    ALIAS=`alias -L | grep -e "=[\'\"]\?${ESCAPED_BUFFER}[\'\"]\?$"`
 
     if [ $ALIAS ]; then
       echo
