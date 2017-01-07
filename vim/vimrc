@@ -98,6 +98,7 @@ Plug 'tomtom/tcomment_vim'
 " HTML
 Plug 'mattn/emmet-vim'
 Plug 'slim-template/vim-slim'
+Plug 'mustache/vim-mustache-handlebars'
 
 " Javascript
 Plug 'othree/yajs.vim'
