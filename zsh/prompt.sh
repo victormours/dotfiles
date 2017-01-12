@@ -41,4 +41,6 @@ path_prompt='%{%F{green}%}%1~%{%f%}'
 
 setopt prompt_subst
 PROMPT='$user_prompt $path_prompt $git_prompt%{%F{yellow%}%#%{%f%}%  '
+RPROMPT='%(?..%B[exit status: %?]%b)  '
+
 
