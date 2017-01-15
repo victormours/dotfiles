@@ -124,6 +124,9 @@ Plug 'ngmy/vim-rubocop'
 " Elixir
 Plug 'elixir-lang/vim-elixir'
 
+" Elm
+Plug 'lambdatoast/elm.vim'
+
 
 call plug#end()
 
