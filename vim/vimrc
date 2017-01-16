@@ -73,12 +73,12 @@ Plug 'tommcdo/vim-exchange'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
-Plug 'victormours/vim-dispatch'
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/syntastic'
 Plug 'vim-scripts/CursorLineCurrentWindow'
 Plug 'victormours/better-writing.vim'
 Plug 'janko-m/vim-test'
+Plug 'skywind3000/asyncrun.vim'
 
 " Search
 Plug 'henrik/vim-indexed-search'

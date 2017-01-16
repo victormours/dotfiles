@@ -16,9 +16,9 @@ endfunction
 
 au BufReadPost *.rb call InitFile()
 
-autocmd BufWritePost Gemfile,*.gemspec Dispatch! bundle install
+autocmd BufWritePost Gemfile,*.gemspec AsyncRun bundle install
 
-autocmd BufWritePost *.rb silent! Dispatch! rubocop % --auto-correct --config $HOME/.dotfiles/ruby/rubocop.yml
+autocmd BufWritePost *.rb AsyncRun rubocop % --auto-correct --config $HOME/.dotfiles/ruby/rubocop.yml
 
 autocmd FileType ruby setlocal colorcolumn=100
 
