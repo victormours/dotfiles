@@ -25,7 +25,8 @@ filepath = ARGV[0]
 code_filepath =  filepath.gsub("_spec.rb", ".rb")
 
 templates = {
-  /app\/initializers/ => '',
+  /app\/config\/initializers/ => '',
+  /^spec\/support/ => '',
   /_spec\.rb$/ => "require \"spec_helper\"
 RSpec.describe #{classify(code_filepath)} do
 
