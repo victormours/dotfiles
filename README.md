@@ -1,8 +1,6 @@
 # .dotfiles
 ## All you need to DEVELOP HARDER!
 
-These are mostly stolen from [skwp's amazing Yadr](https://github.com/skwp/dotfiles).
-
 Installing
 ===
 ```
