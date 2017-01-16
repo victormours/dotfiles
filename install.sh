@@ -25,6 +25,9 @@ brew install the_silver_searcher
 brew install autojump
 brew install git
 
+brew install macvim --with-cscope --with-lua
+brew linkapps macvim
+
 gem install hub
 gem install rubocop-git
 
