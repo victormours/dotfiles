@@ -4,13 +4,13 @@ autocmd FileType ruby :iabbrev <buffer> spec! require 'spec_helper'
 function InitFile()
     if @% == ""
         " No filename for current buffer
-        read !$HOME/.dotfiles/ruby/snippets/init_file %
+        silent !$HOME/.dotfiles/ruby/snippets/init_file %
     elseif filereadable(@%) == 0
         " File doesn't exist yet
-        read !$HOME/.dotfiles/ruby/snippets/init_file %
+        silent !$HOME/.dotfiles/ruby/snippets/init_file %
     elseif line('$') == 1 && col('$') == 1
         " File is empty
-        read !$HOME/.dotfiles/ruby/snippets/init_file %
+        silent !$HOME/.dotfiles/ruby/snippets/init_file %
     endif
 endfunction
 

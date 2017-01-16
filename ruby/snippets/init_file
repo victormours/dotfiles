@@ -22,28 +22,22 @@ def classify(string)
 end
 
 filepath = ARGV[0]
-if filepath[/_spec\.rb$/]
-  code_filepath =  filepath.gsub("_spec.rb", ".rb")
-  puts 'require "spec_helper"'
-  puts ''
-  puts "RSpec.describe #{classify(code_filepath)} do"
-  puts "end"
-elsif filepath[/\.rb$/]
-  puts "class #{classify(filepath)}"
-  puts "end"
-elsif filepath[/\.js$/]
+code_filepath =  filepath.gsub("_spec.rb", ".rb")
 
-  filename = filepath.split("/").last
-  puts '(function(win) {'
+templates = {
+  /app\/initializers/ => '',
+  /_spec\.rb$/ => "require \"spec_helper\"
+RSpec.describe #{classify(code_filepath)} do
 
-  puts "  var #{camelize(filename)}= Vue.extend({"
-  puts "    template: ''"
-  puts '  });'
-  puts "  Vue.component('#{filename.gsub("_", "-")}', #{camelize(filename)});"
+end",
+  /\.rb$/ => "class #{classify(filepath)}
 
-  puts '})(window);'
+end"
+}
 
 
+matching_regex = templates.keys.find do |filename_regex|
+  filepath[filename_regex]
 end
 
-
+File.write(filepath, templates[matching_regex])
