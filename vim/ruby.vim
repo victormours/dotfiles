@@ -18,7 +18,7 @@ au BufReadPost *.rb call InitFile()
 
 autocmd BufWritePost Gemfile,*.gemspec AsyncRun bundle install
 
-autocmd BufWritePost *.rb AsyncRun rubocop % --auto-correct --config $HOME/.dotfiles/ruby/rubocop.yml
+autocmd BufWritePost *.rb AsyncRun -post=checktime rubocop % --auto-correct --config $HOME/.dotfiles/ruby/rubocop.yml
 
 autocmd FileType ruby setlocal colorcolumn=100
 
