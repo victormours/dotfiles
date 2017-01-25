@@ -36,7 +36,7 @@ git clone git://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.dotfiles
 git clone git://github.com/zsh-users/zsh-autosuggestions $HOME/.dotfiles/zsh-autosuggestions
 
 brew install node
-npm install -g jshint
+npm install -g eslint eslint-plugin-react eslint-plugin-jsx-a11y eslint-plugin-import eslint-config-airbnb
 
 echo "# Add machine-specific config here (this file and the local directory will be ignored by git)" > $HOME/.dotfiles/local/zshrc
 
