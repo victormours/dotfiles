@@ -67,6 +67,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'yegappan/mru'
 
 Plug 'Shougo/neocomplete.vim'
 Plug 'tommcdo/vim-exchange'
