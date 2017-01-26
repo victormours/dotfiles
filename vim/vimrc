@@ -89,6 +89,10 @@ Plug 'mileszs/ack.vim'
 " Git
 Plug 'tpope/vim-fugitive'
 
+" Tmux
+Plug 'tmux-plugins/vim-tmux'
+Plug 'christoomey/vim-tmux-navigator'
+
 " Visuals
 Plug 'altercation/vim-colors-solarized'
 
