@@ -6,3 +6,7 @@ imap <D-/> <Esc>:TComment<CR>i
 map <C-/> :TComment<CR>
 imap <C-/> <Esc>:TComment<CR>i
 
+" Leader-/ to toggle comments
+map <Leader>/ :TComment<CR>
+imap <Leader>/ <Esc>:TComment<CR>i
+
