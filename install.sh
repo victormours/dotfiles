@@ -10,6 +10,7 @@ mkdir $HOME/.vim/
 ln -s $HOME/.dotfiles/vim/plugin $HOME/.vim/plugin
 ln -s $HOME/.dotfiles/zsh/zshrc $HOME/.zshrc
 ln -s $HOME/.dotfiles/zsh/zshenv $HOME/.zshenv
+ln -s $HOME/.dotfiles/tmux/tmux.conf $HOME/.tmux.conf
 ln -s $HOME/.dotfiles/git/gitconfig $HOME/.gitconfig
 ln -s $HOME/.dotfiles/gemrc $HOME/.gemrc
 ln -s $HOME/.dotfiles/javascript/jshintrc $HOME/.jshintrc
