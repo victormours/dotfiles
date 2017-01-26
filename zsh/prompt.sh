@@ -38,9 +38,10 @@ precmd_functions+=set_git_prompt
 
 user_prompt='%{%F{magenta}%}%n%{%f%}'
 path_prompt='%{%F{green}%}%1~%{%f%}'
+state_prompt='%{%F{yellow}%}%#%{%f%}'
 
 setopt prompt_subst
-PROMPT='$user_prompt $path_prompt $git_prompt%{%F{yellow%}%#%{%f%}%  '
-RPROMPT='%(?..%B[exit status: %?]%b)  '
+PROMPT='$user_prompt $path_prompt $git_prompt$state_prompt '
+RPROMPT='%(?..%B[exit status: %?]%b)'
 
 
