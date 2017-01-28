@@ -14,7 +14,8 @@ PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
 PATH=$PATH:/usr/local/bin
 
 # Autojump
-[[ -s $HOME/.autojump/etc/profile.d/autojump.sh ]] && source $HOME/.autojump/etc/profile.d/autojump.sh
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
 autoload -U compinit && compinit -u
 
 # Allow opening a bunch of files
@@ -22,6 +23,7 @@ ulimit -n 1024
 
 # Haskell
 export PATH="$HOME/Library/Haskell/bin:$PATH"
+export PATH="/usr/local/Cellar/vim/8.0.0237/bin:$PATH"
 
 export EDITOR=vim
 
@@ -36,3 +38,12 @@ source $HOME/.dotfiles/zsh-autosuggestions/zsh-autosuggestions.zsh
 bindkey '^ ' autosuggest-accept
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
 ZSH_AUTOSUGGEST_CLEAR_WIDGETS+='check-alias-and-accept'
+
+# --files: List files that would be searched but do not search
+# --no-ignore: Do not respect .gitignore, etc...
+# --hidden: Search hidden files and folders
+# --follow: Follow symlinks
+# --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
+
+export PATH="/usr/local/bin:$PATH"
