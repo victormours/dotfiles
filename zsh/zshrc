@@ -14,7 +14,8 @@ PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
 PATH=$PATH:/usr/local/bin
 
 # Autojump
-[[ -s $HOME/.autojump/etc/profile.d/autojump.sh ]] && source $HOME/.autojump/etc/profile.d/autojump.sh
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
 autoload -U compinit && compinit -u
 
 # Allow opening a bunch of files
@@ -45,3 +46,4 @@ ZSH_AUTOSUGGEST_CLEAR_WIDGETS+='check-alias-and-accept'
 # --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
 
+export PATH="/usr/local/bin:$PATH"
