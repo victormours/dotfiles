@@ -58,3 +58,7 @@ Style/SpaceInsideHashLiteralBraces:
 Style/SpaceInsideStringInterpolation:
   EnforcedStyle: no_space
 
+Style/StringLiterals:
+    EnforcedStyle: double_quotes
+
+
