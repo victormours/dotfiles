@@ -8,5 +8,4 @@ imap <C-/> <Esc>:TComment<CR>i
 
 " Leader-/ to toggle comments
 map <Leader>/ :TComment<CR>
-imap <Leader>/ <Esc>:TComment<CR>i
 
