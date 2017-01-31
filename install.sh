@@ -43,6 +43,9 @@ gem install rubocop-git
 git clone git://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.dotfiles/zsh-syntax-highlighting
 git clone git://github.com/zsh-users/zsh-autosuggestions $HOME/.dotfiles/zsh-autosuggestions
 
+brew install reattach-to-user-namespace # for  tmux-yank
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 brew install node
 npm install -g eslint eslint-plugin-react eslint-plugin-jsx-a11y eslint-plugin-import eslint-config-airbnb
 
