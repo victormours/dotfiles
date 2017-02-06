@@ -69,6 +69,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'yegappan/mru'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  }
 Plug 'junegunn/fzf.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 
 Plug 'Shougo/neocomplete.vim'
 Plug 'tommcdo/vim-exchange'
