@@ -10,8 +10,8 @@ source $HOME/.dotfiles/zsh/explicit_aliases.sh
 
 source $HOME/.dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+PATH="/usr/local/bin:$PATH"
 PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
-PATH=$PATH:/usr/local/bin
 
 # Autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
@@ -23,7 +23,6 @@ ulimit -n 1024
 
 # Haskell
 export PATH="$HOME/Library/Haskell/bin:$PATH"
-export PATH="/usr/local/Cellar/vim/8.0.0237/bin:$PATH"
 
 export EDITOR=vim
 
@@ -46,4 +45,3 @@ ZSH_AUTOSUGGEST_CLEAR_WIDGETS+='check-alias-and-accept'
 # --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
 
-export PATH="/usr/local/bin:$PATH"
