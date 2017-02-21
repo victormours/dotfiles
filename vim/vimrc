@@ -108,6 +108,8 @@ Plug 'slim-template/vim-slim'
 Plug 'mustache/vim-mustache-handlebars'
 
 " Javascript
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 Plug 'othree/yajs.vim'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'claco/jasmine.vim'
