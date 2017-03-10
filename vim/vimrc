@@ -155,6 +155,7 @@ source ~/.dotfiles/vim/splits.vim
 source ~/.dotfiles/vim/tabs.vim
 source ~/.dotfiles/vim/font.vim
 source ~/.dotfiles/vim/ruby.vim
+source ~/.dotfiles/vim/javascript.vim
 
 " Better search
 set hlsearch
