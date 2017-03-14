@@ -77,11 +77,11 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'jiangmiao/auto-pairs'
-Plug 'victormours/validator.vim', { 'branch': 'ruby-support' }
 Plug 'vim-scripts/CursorLineCurrentWindow'
 Plug 'victormours/better-writing.vim'
 Plug 'janko-m/vim-test'
 Plug 'skywind3000/asyncrun.vim'
+Plug 'w0rp/ale'
 
 " Search
 Plug 'henrik/vim-indexed-search'
