@@ -30,6 +30,7 @@ brew install the_silver_searcher
 brew install autojump
 brew install git
 brew install tmux
+brew install ripgrep
 
 brew install macvim --with-cscope --with-lua
 brew linkapps macvim
