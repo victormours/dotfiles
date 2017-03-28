@@ -25,21 +25,8 @@ vim +PlugInstall +q
 # Install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# Brew specific installs
-brew install the_silver_searcher
-brew install autojump
-brew install git
-brew install tmux
-brew install ripgrep
-
-brew install macvim --with-cscope --with-lua
+brew bundle
 brew linkapps macvim
-
-brew install vim --with-lua
-
-brew install rbenv
-brew install ruby-build
-
 
 gem install hub
 gem install rubocop-git

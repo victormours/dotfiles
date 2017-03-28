@@ -20,6 +20,8 @@ autocmd BufWritePost Gemfile,*.gemspec AsyncRun bundle install
 
 autocmd BufWritePost *.rb AsyncRun -post=checktime rubocop % --auto-correct --config $HOME/.dotfiles/ruby/rubocop.yml
 
+autocmd BufNewFile,BufRead Brewfile set filetype=ruby
+
 autocmd FileType ruby setlocal colorcolumn=100
 
 nmap <Leader>cc :! grep "module\\\|class\\\|private\\\|def " %<Enter>
