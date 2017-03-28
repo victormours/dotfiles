@@ -7,6 +7,7 @@ alias rac='bundle exec spring rails console'
 
 alias rs='bundle exec rspec'
 alias rss='bundle exec spring rspec'
+alias ss='spring stop'
 alias rp='bundle exec rspec-preloader'
 
 alias bec='bundle exec cucumber'
