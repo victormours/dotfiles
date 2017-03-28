@@ -24,7 +24,7 @@ alias com='git commit -m'
 alias ca='git add --all :/; git commit --amend --no-edit'
 
 alias p='git push'
-alias pf='git push --force'
+alias pp='git push -u origin $(git rev-parse --abbrev-ref HEAD)'
 
 alias st='git stash'
 alias sp='git stash pop'
