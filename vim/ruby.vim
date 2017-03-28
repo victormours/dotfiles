@@ -1,5 +1,5 @@
 autocmd FileType ruby :iabbrev <buffer> pry! require 'pry'; binding.pry;
-autocmd FileType ruby :iabbrev <buffer> spec! require 'spec_helper'
+autocmd FileType ruby :iabbrev <buffer> arlog! ActiveRecord::Base.logger = Logger.new(STDOUT);
 
 function InitFile()
     if @% == ""
