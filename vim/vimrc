@@ -211,7 +211,7 @@ if has("gui_running")
   set fullscreen
 end
 
-nnoremap ; :!
+nnoremap ; :
 
 " Set vertical bar as cursor in insert mode
 if exists('$TMUX')
