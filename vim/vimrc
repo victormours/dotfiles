@@ -224,3 +224,6 @@ endif
 
 
 nmap <Leader>s :write<Enter>
+nmap <Leader>r :redraw!<Enter>
+
+
