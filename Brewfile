@@ -3,6 +3,7 @@ brew "autojump"
 brew "git"
 brew "tmux"
 brew "ripgrep"
+brew "fzf"
 
 brew "macvim", args: ["with-cscope", "with-lua"]
 

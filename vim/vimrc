@@ -90,6 +90,7 @@ Plug 'mileszs/ack.vim'
 
 " Git
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 
 " Tmux
 Plug 'tmux-plugins/vim-tmux'
@@ -118,12 +119,12 @@ Plug 'lfilho/cosco.vim'
 
 " Ruby
 Plug 'Keithbsmiley/rspec.vim'
+Plug 'thoughtbot/vim-rspec'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-endwise'
 Plug 'ecomba/vim-ruby-refactoring'
 Plug 'vim-ruby/vim-ruby'
 Plug 'emilsoman/spec-outline.vim'
-Plug 'victormours/vim-rspec'
 Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'kana/vim-textobj-user'
 Plug 'jgdavey/vim-blockle'
@@ -225,5 +226,5 @@ endif
 
 nmap <Leader>s :write<Enter>
 nmap <Leader>r :redraw!<Enter>
-
+nmap <Leader>n :edit tmp/notes.txt<Enter>
 

@@ -8,4 +8,4 @@ endif
 
 let g:ctrlp_user_command = 'rg --files %s'
 
-let g:ctrlp_match_func = {'match': 'cpsm#CtrlPMatch'}
+" let g:ctrlp_match_func = {'match': 'cpsm#CtrlPMatch'}
