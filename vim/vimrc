@@ -104,18 +104,14 @@ Plug 'tomtom/tlib_vim'
 Plug 'tomtom/tcomment_vim'
 
 " HTML
-Plug 'mattn/emmet-vim'
 Plug 'slim-template/vim-slim'
 Plug 'mustache/vim-mustache-handlebars'
 
 " Javascript
+Plug 'mattn/emmet-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
-Plug 'othree/yajs.vim'
-Plug 'othree/javascript-libraries-syntax.vim'
-Plug 'claco/jasmine.vim'
 Plug 'kchmck/vim-coffee-script'
-Plug 'lfilho/cosco.vim'
 
 " Ruby
 Plug 'Keithbsmiley/rspec.vim'
