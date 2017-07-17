@@ -27,3 +27,7 @@ function project_wide_replace {
   rg -l $old | xargs -n1 sed -i '' -e s/$old/$new/g
 }
 alias rep=project_wide_replace
+
+function weather {
+   curl -s "http://wttr.in/${1:-Paris}" | head -n 27
+}
