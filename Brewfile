@@ -11,3 +11,4 @@ brew "vim", args: ["with-lua"]
 brew "rbenv"
 brew "ruby-build"
 
+brew "yarn"
