@@ -27,3 +27,8 @@ function nb {
   git checkout -b $NEW_BRANCH_NAME
   git branch --set-upstream-to origin/$NEW_BRANCH_NAME
 }
+
+# Find a commit mentioning a piece of text
+function git_dig {
+  git log --pretty=format:'%Cred%h%Creset - %Cgreen(%ad)%Creset - %s %C(bold blue)<%an>%Creset' --abbrev-commit --date=short -G"$1" -- $2
+}
