@@ -40,3 +40,5 @@ fuzzy_branches() {
 }
 
 alias cc=fuzzy_branches
+
+alias cir="open https://circleci.com/dashboard"
