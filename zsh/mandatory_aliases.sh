@@ -25,3 +25,5 @@ function check-alias-and-accept {
 zle -N check-alias-and-accept
 bindkey '^J' check-alias-and-accept
 bindkey '^M' check-alias-and-accept
+
+

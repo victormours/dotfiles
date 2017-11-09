@@ -47,3 +47,12 @@ export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.g
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+function repeat_previous_command {
+  history | tail -n1 | cut -d ' ' -f 2- | xargs
+}
+
+zle -N repeat_previous_command
+bindkey '^i' repeat_previous_command
+
+

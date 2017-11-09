@@ -24,7 +24,5 @@ function top_recent_commands {
 alias trc=top_recent_commands
 
 function format_history {
-  cut -d ';' -f 2- 2>/dev/null |
-    awk '{a[$1]++ } END{for(i in a){print a[i] " " i}}'|
-    sort -rn
+  cut -d ';' -f 2- 2>/dev/null | awk '{a[$1]++ } END{for(i in a){print a[i] " " i}}'| sort -rn
 }
