@@ -21,12 +21,13 @@ function jira {
     fi
 }
 
-function project_wide_replace {
+function rg_replace {
   old=$1
   new=$2
-  rg -l $old | xargs -n1 sed -i '' -e s/$old/$new/g
+  replace_path=$3
+  rg -l $old $replace_path | xargs -n1 sed -i '' -e s/$old/$new/g
 }
-alias rep=project_wide_replace
+alias rep=rg_replace
 
 function weather {
    curl -s "http://wttr.in/${1:-Paris}" | head -n 27
