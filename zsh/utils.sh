@@ -45,3 +45,5 @@ fuzzy_branches() {
 alias cc=fuzzy_branches
 
 alias cir="open https://circleci.com/dashboard"
+
+alias jo="ruby $HOME/.dotfiles/journal.rb"

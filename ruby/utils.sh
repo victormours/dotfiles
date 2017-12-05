@@ -40,3 +40,4 @@ function new_ruby_bin {
   echo "#!/usr/bin/env ruby" > $filename
   chmod u+x $filename
 }
+
