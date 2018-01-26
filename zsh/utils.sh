@@ -31,3 +31,5 @@ alias rep=project_wide_replace
 function weather {
    curl -s "http://wttr.in/${1:-Paris}" | head -n 27
 }
+
+alias frm="fzf | xargs rm -v"
