@@ -47,3 +47,8 @@ alias cc=fuzzy_branches
 alias cir="open https://circleci.com/dashboard"
 
 alias jo="ruby $HOME/.dotfiles/journal.rb"
+
+function grep_blame {
+  grep $1 ./**/*.rb -l | xargs -L 1 git blame | grep $1
+}
+

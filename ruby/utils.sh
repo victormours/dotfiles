@@ -41,3 +41,15 @@ function new_ruby_bin {
   chmod u+x $filename
 }
 
+
+function rails_rerun_migration {
+  migration_timestamp=$1
+  echo "running rails db:migrate:down VERSION=$migration_timestamp"
+  rails db:migrate:down VERSION=$migration_timestamp
+  echo "running rails db:migrate:up VERSION=$migration_timestamp"
+  rails db:migrate:up VERSION=$migration_timestamp
+  echo "running rails db:migrate:down VERSION=$migration_timestamp RAILS_ENV=test"
+  rails db:migrate:down VERSION=$migration_timestamp RAILS_ENV=test
+  echo "running rails db:migrate:up VERSION=$migration_timestamp RAILS_ENV=test"
+  rails db:migrate:ip VERSION=$migration_timestamp RAILS_ENV=test
+}

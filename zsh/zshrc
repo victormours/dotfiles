@@ -14,7 +14,7 @@ PATH="/usr/local/bin:$PATH"
 PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
 
 # Autojump
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+# [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 autoload -U compinit && compinit -u
 
@@ -27,10 +27,6 @@ export PATH="$HOME/Library/Haskell/bin:$PATH"
 export EDITOR=vim
 
 setopt AUTO_CD
-
-if [ -f $HOME/.dotfiles/local/zshrc ]; then
-  source $HOME/.dotfiles/local/zshrc
-fi
 
 source $HOME/.dotfiles/zsh-autosuggestions/zsh-autosuggestions.zsh
 bindkey '^ ' autosuggest-accept
@@ -47,3 +43,9 @@ export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.g
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+if [ -f $HOME/.dotfiles/local/zshrc ]; then
+  source $HOME/.dotfiles/local/zshrc
+fi
+
+
