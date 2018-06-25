@@ -129,6 +129,7 @@ Plug 'kana/vim-textobj-user'
 Plug 'jgdavey/vim-blockle'
 Plug 'KurtPreston/vim-autoformat-rails'
 Plug 'ngmy/vim-rubocop'
+Plug 'victormours/ruby-memoize.vim'
 
 " Elixir
 Plug 'elixir-lang/vim-elixir'
