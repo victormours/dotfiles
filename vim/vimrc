@@ -194,9 +194,20 @@ set scrolloff=5 " Keep 5 lines below and above the cursor
 
 set cursorline
 
+function! GetBranchName(_) abort
+  let b:branch_name = systemlist("git rev-parse --abbrev-ref HEAD 2> /dev/null || echo ''")[0]
+endfunction
+call timer_start(1000, function('GetBranchName'), {'repeat': -1})
+
+autocmd BufEnter,BufWritePost * call GetBranchName("")
+
 set laststatus=2
-set statusline=%f "tail of the filename
-set statusline+=\ c:%c
+set statusline=%f " tail of the filename
+set statusline+=\ c:%c " column number
+set statusline+=%= " switching to right side
+set statusline+=%(%{b:branch_name}%)
+
+
 
 command FormatJSON %!python -m json.tool
 
