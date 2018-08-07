@@ -49,3 +49,4 @@ if [ -f $HOME/.dotfiles/local/zshrc ]; then
 fi
 
 
+alias wtfyarn="rm -rf node_modules; yarn cache clean; yarn"
