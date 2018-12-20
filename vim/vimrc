@@ -137,6 +137,9 @@ Plug 'elixir-lang/vim-elixir'
 " Elm
 Plug 'lambdatoast/elm.vim'
 
+" Terraform
+Plug 'hashivim/vim-terraform'
+
 
 call plug#end()
 
