@@ -9,3 +9,5 @@ alias psg='ps aux | grep'
 alias hl='heroku local'
 
 alias dot='j dotfiles; mvim'
+
+alias trf=terraform
