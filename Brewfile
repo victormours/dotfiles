@@ -4,11 +4,12 @@ brew "git"
 brew "tmux"
 brew "ripgrep"
 
-brew "macvim", args: ["with-cscope", "with-lua"]
+brew "macvim"
 
-brew "vim", args: ["with-lua"]
+brew "vim"
 
 brew "rbenv"
 brew "ruby-build"
+brew "node"
 
 brew "yarn"
