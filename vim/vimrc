@@ -81,7 +81,7 @@ Plug 'vim-scripts/CursorLineCurrentWindow'
 Plug 'victormours/better-writing.vim'
 Plug 'janko-m/vim-test'
 Plug 'skywind3000/asyncrun.vim'
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 
 " Search
 Plug 'henrik/vim-indexed-search'
