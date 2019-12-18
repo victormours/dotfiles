@@ -1,2 +1,2 @@
-autocmd BufWritePost *.js AsyncRun -post=checktime eslint --fix %
+" autocmd BufWritePost *.js AsyncRun -post=checktime eslint --fix %
 
