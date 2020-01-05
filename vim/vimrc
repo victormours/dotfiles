@@ -70,6 +70,7 @@ Plug 'yegappan/mru'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  }
 Plug 'junegunn/fzf.vim'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 Plug 'Shougo/neocomplete.vim'
 Plug 'tommcdo/vim-exchange'
@@ -241,4 +242,6 @@ endif
 nmap <Leader>s :write<Enter>
 nmap <Leader>r :redraw!<Enter>
 
-
+let g:VM_maps = {}
+let g:VM_maps['Find Under']         = 'zz'           " replace C-n
+let g:VM_maps['Find Subword Under'] = 'zz'
