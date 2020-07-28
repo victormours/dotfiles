@@ -11,14 +11,9 @@ alias ls='ls -Gh'
 
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 
-function jira {
-  if [ $# -eq 0 ]
-    then
-      open https://jobteaser.atlassian.net/browse/JT-`gcb | grep -oE '\d{4}'`
-    else
-      TICKET_ID=$1
-      open https://jobteaser.atlassian.net/browse/JT-$TICKET_ID
-    fi
+function wifi_password {
+  wifi_name=$1
+  security find-generic-password -ga $wifi_name | grep “password:”
 }
 
 function project_wide_replace {
