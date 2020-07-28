@@ -4,10 +4,6 @@ function open_gem {
 }
 alias og=open_gem
 
-function remote_console {
-  environment=$1
-  bundle exec cap $environment remote:console
-}
 alias rc=remote_console
 
 function specs_for {
