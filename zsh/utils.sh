@@ -27,6 +27,6 @@ function weather {
    curl -s "http://wttr.in/${1:-Paris}" | head -n 27
 }
 
-alias localh="open souscription.enercoop.localhost:8080"
+alias localh="open http://souscription.enercoop.localhost:8080"
 
 alias frm="fzf | xargs rm -v"
