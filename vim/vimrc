@@ -184,6 +184,8 @@ set linebreak    "Wrap lines at convenient points
 " Move normally between wrapped lines
 nmap j gj
 nmap k gk
+vmap j gj
+vmap k gk
 
 autocmd BufReadPre,FileReadPre *.md :set wrap
 
