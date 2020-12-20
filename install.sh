@@ -26,7 +26,7 @@ vim +PlugInstall +q
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 brew bundle
-brew linkapps macvim
+brew link --overwrite macvim
 
 gem install hub
 gem install rubocop-git

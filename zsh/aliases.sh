@@ -1,4 +1,4 @@
-alias m="/Applications/MacVim.app/Contents/bin/mvim"
+alias m=mvim
 alias v=vim
 
 alias t=time
