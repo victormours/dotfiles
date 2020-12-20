@@ -34,9 +34,6 @@ gem install rubocop-git
 git clone git://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.dotfiles/zsh-syntax-highlighting
 git clone git://github.com/zsh-users/zsh-autosuggestions $HOME/.dotfiles/zsh-autosuggestions
 
-brew install reattach-to-user-namespace # for  tmux-yank
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
 npm install -g eslint eslint-plugin-react eslint-plugin-jsx-a11y eslint-plugin-import eslint-config-airbnb
 
 echo "# Add machine-specific config here (this file and the local directory will be ignored by git)" > $HOME/.dotfiles/local/zshrc
