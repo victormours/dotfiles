@@ -12,6 +12,7 @@ brew "vim"
 brew "rbenv"
 brew "ruby-build"
 brew "node"
-brew "nvm"
+
+brew "nodenv"
 
 brew "yarn"
