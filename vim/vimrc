@@ -141,6 +141,7 @@ Plug 'lambdatoast/elm.vim'
 " Terraform
 Plug 'hashivim/vim-terraform'
 
+Plug 'jparise/vim-graphql'
 
 call plug#end()
 
