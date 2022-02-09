@@ -36,3 +36,9 @@ function new_ruby_bin {
   echo "#!/usr/bin/env ruby" > $filename
   chmod u+x $filename
 }
+
+# Delete vcr cassettes containing a certain expression
+function delete_cassettes_with {
+  cassette_content=$1
+  grep -l $cassette_content spec/fixtures/**/*.yml | xargs rm
+}

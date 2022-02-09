@@ -37,7 +37,7 @@ export PATH="bin:$PATH"
 export EDITOR=vim
 
 setopt AUTO_CD
-j # Jump to most commonly used directory
+j rdv # Jump to current day job directory
 
 if [ -f $HOME/.dotfiles/local/zshrc ]; then
   source $HOME/.dotfiles/local/zshrc
@@ -61,8 +61,6 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-#
-eval "$(nodenv init -)"
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 
@@ -72,3 +70,4 @@ export LDFLAGS="-L/opt/homebrew/opt/readline/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/readline/include"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/readline/lib/pkgconfig"
 
+eval "$(nodenv init -)"
