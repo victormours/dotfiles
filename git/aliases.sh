@@ -5,7 +5,7 @@ alias c='git checkout'
 
 alias b='git branch -v'
 
-alias cm='git checkout master'
+alias cm='git checkout production'
 alias gd='git checkout develop'
 
 alias f='git add --all :/; git commit -m "fix"'
@@ -37,7 +37,7 @@ alias gls='git log --graph --date=short --pretty=oneline --abbrev-commit -n10'
 
 alias gri='git rebase -i'
 alias grc='git rebase --continue'
-alias rim='git rebase -i master'
+alias rim='git rebase -i production'
 alias rid='git rebase -i develop'
 
 alias gclone='git clone'
@@ -46,11 +46,11 @@ alias ginit='git init'
 # Other git aliases
 alias gcb='git rev-parse --abbrev-ref HEAD' #current branch
 alias gdd='git diff develop'
-alias gdm='git diff master'
+alias gdm='git diff production'
 alias gi='vim .gitignore'
 alias gm='git merge --no-ff'
 alias gmd='git merge --no-ff develop'
-alias gmm='git merge --no-ff master'
+alias gmm='git merge --no-ff production'
 alias gms='git merge --squash'
 alias grv='git remote -v'
 alias grr='git remote rm'
