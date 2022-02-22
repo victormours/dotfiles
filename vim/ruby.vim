@@ -1,4 +1,4 @@
-autocmd FileType ruby :iabbrev <buffer> pry! require 'pry'; binding.pry;
+autocmd FileType ruby :iabbrev <buffer> pry! byebug
 autocmd FileType ruby :iabbrev <buffer> arlog! ActiveRecord::Base.logger = Logger.new(STDOUT);
 
 function InitFile()
