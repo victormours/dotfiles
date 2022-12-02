@@ -31,8 +31,8 @@ brew link --overwrite macvim
 gem install hub
 gem install rubocop-git
 
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.dotfiles/zsh-syntax-highlighting -- depth 1
-git clone https://github.com/zsh-users/zsh-autosuggestions $HOME/.dotfiles/zsh-autosuggestions -- depth 1
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.dotfiles/zsh-syntax-highlighting --depth 1
+git clone https://github.com/zsh-users/zsh-autosuggestions $HOME/.dotfiles/zsh-autosuggestions --depth 1
 
 npm install -g eslint eslint-plugin-react eslint-plugin-jsx-a11y eslint-plugin-import eslint-config-airbnb
 
