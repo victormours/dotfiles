@@ -15,3 +15,7 @@ function new_repo {
   fi
 }
 
+function browse_issue {
+  ISSUE_ID=$1
+  hub browse -- issues/$ISSUE_ID
+}
