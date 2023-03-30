@@ -25,3 +25,6 @@ autocmd BufNewFile,BufRead Brewfile set filetype=ruby
 autocmd FileType ruby setlocal colorcolumn=100
 
 nmap <Leader>cc :! grep "module\\\|class\\\|private\\\|def " %<Enter>
+
+
+autocmd BufNewFile,BufRead *.yml,*.html.slim set cuc
