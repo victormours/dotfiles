@@ -1,12 +1,11 @@
 #!/usr/bin/env ruby
 
-def remove_non_module_directories(string)
-  string.gsub(/^spec\//, '')
-    .gsub(/^lib\//, '')
-    .gsub(/^app\//, '')
-    .gsub(/^controllers\//, '')
-    .gsub(/^views\//, '')
-    .gsub(/^models\//, '')
+NON_MODULE_DIRECTORIES = %i[app spec lib controllers views models helpers form_models]
+
+def remove_non_module_directories(path)
+  NON_MODULE_DIRECTORIES.reduce(path) do |p, dir_name|
+    p.gsub(/^#{dir_name}\//, '')
+  end
 end
 
 def camelize(string)
