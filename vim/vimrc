@@ -71,6 +71,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  }
 Plug 'junegunn/fzf.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'preservim/vim-indent-guides'
 
 Plug 'Shougo/neocomplete.vim'
 Plug 'tommcdo/vim-exchange'
@@ -248,3 +249,8 @@ nmap <Leader>r :redraw!<Enter>
 let g:VM_maps = {}
 let g:VM_maps['Find Under']         = 'zz'           " replace C-n
 let g:VM_maps['Find Subword Under'] = 'zz'
+
+
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg='#eee8d5'
+autocmd BufReadPre,FileReadPre *.yml,*.slim :IndentGuidesEnable
