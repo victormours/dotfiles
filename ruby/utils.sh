@@ -4,8 +4,6 @@ function open_gem {
 }
 alias og=open_gem
 
-alias rc=remote_console
-
 function specs_for {
   #TODO: cleanup
   bundle exec rspec `find spec/ -path spec/factories -prune -o -name '*$1*'`

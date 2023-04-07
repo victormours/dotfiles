@@ -25,3 +25,5 @@ autocmd BufNewFile,BufRead Brewfile set filetype=ruby
 autocmd FileType ruby setlocal colorcolumn=100
 
 nmap <Leader>cc :! grep "module\\\|class\\\|private\\\|def " %<Enter>
+
+nnoremap <Leader>tt :grep! "create_table" db/schema.rb<CR>:cw<CR><CR>
