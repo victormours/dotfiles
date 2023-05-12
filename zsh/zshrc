@@ -17,8 +17,6 @@ PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
 
 export LANG="en_US.UTF-8"
 
-# Autojump
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 autoload -U compinit && compinit -u
 
@@ -37,7 +35,6 @@ export PATH="bin:$PATH"
 export EDITOR=vim
 
 setopt AUTO_CD
-j rdv # Jump to current day job directory
 
 if [ -f $HOME/.dotfiles/local/zshrc ]; then
   source $HOME/.dotfiles/local/zshrc
@@ -71,3 +68,9 @@ export CPPFLAGS="-I/opt/homebrew/opt/readline/include"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/readline/lib/pkgconfig"
 
 eval "$(nodenv init -)"
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+# Autojump
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+
+j rdv # Jump to current day job directory
