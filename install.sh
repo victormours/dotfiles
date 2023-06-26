@@ -36,6 +36,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions $HOME/.dotfiles/zsh-a
 
 npm install -g eslint eslint-plugin-react eslint-plugin-jsx-a11y eslint-plugin-import eslint-config-airbnb
 
+pip3 install --user pynvim # for deoplete plugin in vim
+
 echo "# Add machine-specific config here (this file and the local directory will be ignored by git)" > $HOME/.dotfiles/local/zshrc
 
 echo "Done installing! You can customize your local zsh config by editing ~/.dotfiles/local/zshrc"

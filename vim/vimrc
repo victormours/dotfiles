@@ -73,7 +73,10 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'preservim/vim-indent-guides'
 
-Plug 'Shougo/neocomplete.vim'
+Plug 'Shougo/deoplete.nvim'
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/vim-hug-neovim-rpc'
+
 Plug 'tommcdo/vim-exchange'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-surround'
