@@ -29,3 +29,4 @@ function weather {
 alias localh="open http://souscription.enercoop.localhost:8080"
 
 alias frm="fzf | xargs rm -v"
+alias cf="git branch -v | fzf | tr -s ' ' | cut -d ' ' -f 2 |  xargs git checkout"
