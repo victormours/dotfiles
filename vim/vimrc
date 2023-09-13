@@ -220,7 +220,7 @@ set statusline+=%(%{b:branch_name}%)
 
 
 
-command FormatJSON %!python -m json.tool
+command FormatJSON %!python3 -m json.tool
 
 autocmd VimResized * wincmd = " Automatically resize splits when resizing window
 
