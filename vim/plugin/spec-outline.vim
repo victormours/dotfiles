@@ -1,1 +1,1 @@
-map <silent> <Leader>rr :SpecOutlineToggle<CR>
+map <silent> <Leader>sr :SpecOutlineToggle<CR>

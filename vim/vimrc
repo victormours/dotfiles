@@ -27,7 +27,7 @@ syntax on
 " The mapleader has to be set before vundle starts loading all
 " the plugins.
 let mapleader = "\<Space>"
-nmap <Leader>rxm :ExtractMethod<Enter>
+nmap <Leader>xm :ExtractMethod<Enter>
 
 " Copy the relative path of the current file to the clipboard
 nmap <Leader>cf :silent !echo -n % \| pbcopy<Enter>
@@ -178,8 +178,6 @@ if executable('rg')
 endif
 
 
-nnoremap <Leader>a :Ack!<Space>
-
 " grep word under cursor
 nnoremap <Leader>g :grep! "\b<C-R><C-W>\b"<CR>:cw<CR><CR>
 
@@ -247,7 +245,6 @@ endif
 
 
 nmap <Leader>s :write<Enter>
-nmap <Leader>r :redraw!<Enter>
 
 let g:VM_maps = {}
 let g:VM_maps['Find Under']         = 'zz'           " replace C-n

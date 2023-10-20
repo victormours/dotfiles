@@ -8,4 +8,11 @@ endif
 
 let g:ctrlp_user_command = 'rg --files %s'
 
-" let g:ctrlp_match_func = {'match': 'cpsm#CtrlPMatch'}
+function! LazyP()
+  let g:ctrlp_default_input = expand('<cword>')
+  CtrlP
+  let g:ctrlp_default_input = ''
+endfunction
+
+" open fuzzy file finder searching for word under cursor
+nnoremap <Leader>a :call LazyP()<CR>
