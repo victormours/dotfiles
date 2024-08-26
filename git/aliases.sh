@@ -2,6 +2,8 @@
 alias d='git diff'
 alias s='git status'
 alias c='git checkout'
+# This overrides the clang compiler, but I don't use it
+alias cc='git checkout -'
 
 alias b='git branch -v'
 
