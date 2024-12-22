@@ -4,7 +4,6 @@ source $HOME/.dotfiles/github/utils.sh
 
 alias a="osascript -e 'tell application \"MacVim\" to activate'"
 alias h="osascript -e 'tell application \"Chrome\" to activate'"
-alias k="osascript -e 'tell application \"Slack\" to activate'"
 
 alias ls='ls -Gh'
 
