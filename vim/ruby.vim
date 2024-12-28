@@ -17,7 +17,7 @@ endfunction
 au BufReadPost *.rb call InitFile()
 
 " autocmd BufWritePost Gemfile,*.gemspec AsyncRun bundle install
-autocmd BufWritePost *.html.slim AsyncRun bundle exec slim-lint 
+autocmd BufWritePost *.html.slim AsyncRun bundle exec slim-lint
 
 " autocmd BufWritePost *.rb AsyncRun -post=checktime rubocop % --auto-correct --config $HOME/.dotfiles/ruby/rubocop.yml
 
@@ -28,3 +28,6 @@ autocmd FileType ruby setlocal colorcolumn=100
 nmap <Leader>cc :! grep "module\\\|class\\\|private\\\|def " %<Enter>
 
 nnoremap <Leader>tt :grep! "create_table" db/schema.rb<CR>:cw<CR><CR>
+
+
+command Slim %!$HOME/.dotfiles/ruby/slimify.rb
