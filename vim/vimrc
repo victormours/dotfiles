@@ -117,8 +117,6 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'othree/yajs.vim'
 Plug 'othree/javascript-libraries-syntax.vim'
-Plug 'claco/jasmine.vim'
-Plug 'kchmck/vim-coffee-script'
 Plug 'lfilho/cosco.vim'
 
 " Ruby
@@ -138,9 +136,6 @@ Plug 'victormours/ruby-memoize.vim'
 
 " Elixir
 Plug 'elixir-lang/vim-elixir'
-
-" Elm
-Plug 'lambdatoast/elm.vim'
 
 " Terraform
 Plug 'hashivim/vim-terraform'
