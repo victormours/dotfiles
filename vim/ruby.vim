@@ -34,12 +34,12 @@ command Slim %!$HOME/.dotfiles/ruby/slimify.rb
 
 
 function RunSpecLine()
+
   if match(@%, '.*_spec.rb') == 0
     let g:last_rspec_run = @% . ':' . line(".")
-    execute "AsyncRun -mode=term -strip  bundle exec spring rspec %:" . line(".")
-  else
-    execute "AsyncRun -mode=term -strip  bundle exec spring rspec " . g:last_rspec_run
   endif
+
+  execute "AsyncRun -mode=term -pos=TAB -strip  bundle exec spring rspec " . g:last_rspec_run
 endfunction
 
 nmap <Leader>j :call RunSpecLine()<CR>
