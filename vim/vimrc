@@ -101,7 +101,7 @@ Plug 'tmux-plugins/vim-tmux'
 Plug 'christoomey/vim-tmux-navigator'
 
 " Visuals
-Plug 'lifepillar/vim-solarized8'
+Plug 'altercation/vim-colors-solarized'
 
 " Commenting
 Plug 'tomtom/tlib_vim'
@@ -148,7 +148,7 @@ syntax enable
 " Solarized theme
 let g:solarized_termtrans = 1
 set background=light
-colorscheme solarized8_high
+colorscheme solarized
 
 " if has("gui_running")
 " "tell the term has 256 colors
@@ -248,3 +248,10 @@ let g:VM_maps['Find Subword Under'] = 'zz'
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg='#eee8d5'
 autocmd BufReadPre,FileReadPre *.yml,*.slim :IndentGuidesEnable
+
+
+" for terminal windows:
+let g:terminal_ansi_colors = ['#073642', '#dc322f', '#859900', '#b58900', '#268bd2', '#d33682', '#2aa198', '#eee8d5',
+      \ '#002b36', '#cb4b16', '#93a1a1', '#839496', '#657b83', '#6c71c4', '#586e75', '#fdf6e3']
+
+highlight Terminal guibg='#FCF5E5'
