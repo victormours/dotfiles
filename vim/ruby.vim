@@ -39,7 +39,8 @@ function RunSpecLine()
     let g:last_rspec_run = @% . ':' . line(".")
   endif
 
-  write
+  " write all the files before running the test
+  wa
 
   execute "AsyncRun -mode=term -pos=TAB -strip  bundle exec spring rspec " . g:last_rspec_run
 endfunction
