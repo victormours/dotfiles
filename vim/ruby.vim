@@ -31,3 +31,11 @@ nnoremap <Leader>tt :grep! "create_table" db/schema.rb<CR>:cw<CR><CR>
 
 
 command Slim %!$HOME/.dotfiles/ruby/slimify.rb
+
+
+function RunSpecLine()
+  execute "AsyncRun -mode=term -strip  bundle exec spring rspec %:" . line(".")
+endfunction
+
+nmap <Leader>j :call RunSpecLine()<CR>
+
