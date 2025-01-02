@@ -39,6 +39,8 @@ function RunSpecLine()
     let g:last_rspec_run = @% . ':' . line(".")
   endif
 
+  write
+
   execute "AsyncRun -mode=term -pos=TAB -strip  bundle exec spring rspec " . g:last_rspec_run
 endfunction
 
