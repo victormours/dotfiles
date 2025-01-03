@@ -13,14 +13,14 @@ git clone git://github.com/victormours/dotfiles.git ~/.dotfiles
 
 ## What you get
 - awesome shell aliases
-- blazingly fast git workflow
+- [blazingly fast git workflow](https://medium.com/@victormours/the-joy-of-single-letter-shell-aliases-8e9047b0760a)
 - sweet vim setup
 - and much more!
 
 Zsh
 ===
 - Explicit aliases! They expand automatically when you use them.
-- Mandatory aliases: so you don't forget to use them.
+- [Mandatory aliases](https://medium.com/@victormours/remembering-shell-aliases-by-making-them-mandatory-49f9d31c5257): so you don't forget to use them.
 ![Mandatory Aliases](https://cloud.githubusercontent.com/assets/1840367/7302861/9e437a96-e9ec-11e4-9978-9f33f21bd7d9.gif)
 
 (Mac)Vim
