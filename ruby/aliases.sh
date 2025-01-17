@@ -11,5 +11,4 @@ alias rss="echo 'use k instead'"
 alias ss='spring stop'
 alias rp='bundle exec rspec-preloader'
 
-alias bec='bundle exec cucumber'
-
+alias bs="bundle exec rails s"
