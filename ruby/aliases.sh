@@ -12,3 +12,4 @@ alias ss='spring stop'
 alias rp='bundle exec rspec-preloader'
 
 alias bs="bundle exec rails s"
+alias bec="bundle exec rails console"
