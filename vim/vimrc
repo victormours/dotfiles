@@ -72,6 +72,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'preservim/vim-indent-guides'
+Plug 'wsdjeg/vim-fetch'
 
 Plug 'Shougo/deoplete.nvim'
 Plug 'roxma/nvim-yarp'
