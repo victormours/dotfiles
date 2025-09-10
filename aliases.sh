@@ -15,3 +15,4 @@ function ae {
 
 alias ar='source $HOME/.dotfiles/aliases.sh'
 
+alias k9='kill -9'
