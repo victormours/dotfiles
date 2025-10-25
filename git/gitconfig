@@ -24,3 +24,5 @@
   frag = magenta bold
   old = red
   new = green
+[init]
+	defaultBranch = main
