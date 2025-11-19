@@ -74,3 +74,10 @@ export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 j rdv # Jump to current day job directory
+
+# bun completions
+[ -s "/Users/victormours/.bun/_bun" ] && source "/Users/victormours/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
