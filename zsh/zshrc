@@ -81,3 +81,8 @@ j rdv # Jump to current day job directory
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Pour la connexion ProConnect
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+
