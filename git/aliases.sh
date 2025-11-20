@@ -8,7 +8,7 @@ alias cc='git checkout -'
 alias b='git branch -v'
 
 alias cm='git checkout production'
-alias gd='git checkout develop'
+alias cl='git checkout production; git pull --rebase'
 
 alias f='git add --all :/; git commit -m "fix"'
 alias fp='git add --all :/; git commit -m "fix"; git push'
