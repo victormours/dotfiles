@@ -36,7 +36,7 @@ Zsh
 
 Abbreviations!
 -
-- `pry!` for `require 'pry'; binding.pry`
+- `pry!` for `debugger` (yeah, old habits and all that)
 - `spec!` for `require 'spec_helper'`
 
 Git(Hub)
