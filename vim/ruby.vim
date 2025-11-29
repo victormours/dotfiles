@@ -1,4 +1,4 @@
-autocmd FileType ruby :iabbrev <buffer> debugger
+autocmd FileType ruby :iabbrev <buffer> pry! debugger
 autocmd FileType ruby :iabbrev <buffer> arlog! ActiveRecord::Base.logger = Logger.new(STDOUT);
 
 function InitFile()
