@@ -15,6 +15,9 @@ source $HOME/.dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 PATH="/usr/local/bin:$PATH"
 PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
 
+PATH="/opt/homebrew/opt/python@3.14/libexec/bin:$PATH"
+
+
 export LANG="en_US.UTF-8"
 
 
