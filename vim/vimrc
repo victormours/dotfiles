@@ -74,9 +74,12 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'preservim/vim-indent-guides'
 Plug 'wsdjeg/vim-fetch'
 
-Plug 'Shougo/deoplete.nvim'
+Plug 'girishji/vimcomplete'
+
+
 Plug 'roxma/nvim-yarp'
 Plug 'roxma/vim-hug-neovim-rpc'
+Plug 'lucapette/vim-textobj-underscore'
 
 Plug 'tommcdo/vim-exchange'
 Plug 'ntpeters/vim-better-whitespace'
@@ -195,6 +198,8 @@ endif
 autocmd FocusLost * silent! wa " Automatically save file
 
 set scrolloff=5 " Keep 5 lines below and above the cursor
+set sidescrolloff=15
+set sidescroll=1
 
 set cursorline
 
