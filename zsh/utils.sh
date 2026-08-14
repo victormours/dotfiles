@@ -17,7 +17,8 @@ function wifi_password {
 function project_wide_replace {
   old=$1
   new=$2
-  rg -l $old | xargs -n1 sed -i '' -e s/$old/$new/g
+  scope=$3
+  rg -l $old $scope | xargs -n1 sed -i '' -e s/$old/$new/g
 }
 alias rep=project_wide_replace
 

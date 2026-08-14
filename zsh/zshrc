@@ -89,3 +89,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 
+
+# Added by `rbenv init` on Tue Jun  9 10:14:28 CEST 2026
+eval "$(rbenv init - --no-rehash zsh)"
