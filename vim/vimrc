@@ -169,6 +169,10 @@ source ~/.dotfiles/vim/javascript.vim
 set hlsearch
 set incsearch
 
+" Make substitutions general by default (in other words, always replace every
+" occurrence on a single line)
+set gdefault
+
 
 if executable('rg')
   set grepprg=rg\ --vimgrep\ --no-heading
