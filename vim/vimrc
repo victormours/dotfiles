@@ -1,5 +1,4 @@
 " Mostly stolen from Yan Pritzer's most excellent Yadr (github.com/skwp/dotfiles)
-
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
@@ -173,7 +172,6 @@ set incsearch
 " occurrence on a single line)
 set gdefault
 
-
 if executable('rg')
   set grepprg=rg\ --vimgrep\ --no-heading
   set grepformat=%f:%l:%m
@@ -229,8 +227,12 @@ autocmd VimResized * wincmd = " Automatically resize splits when resizing window
 "lazy js. Append ; at the end of the line
 nnoremap <Leader>; m`A;<Esc>``
 
-nnoremap H ^
-nnoremap L $
+" Faster moves
+nnoremap H 5h
+nnoremap L 5l
+
+nnoremap Y ^
+nnoremap O $
 
 if has("gui_running")
   set fullscreen
