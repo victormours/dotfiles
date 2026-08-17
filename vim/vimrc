@@ -232,7 +232,6 @@ nnoremap H 5h
 nnoremap L 5l
 
 nnoremap Y ^
-nnoremap O $
 
 if has("gui_running")
   set fullscreen
